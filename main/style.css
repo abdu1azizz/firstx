@@ -1,0 +1,3933 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(229, 229, 229);
+}
+
+.fixed {
+  transition: 0.5s;
+  transition-duration: 0.4s;
+}
+
+.marCh {
+  margin-top: 180px;
+}
+
+.stractive {
+  z-index: 3;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.animate__animated.animate__fadeIn {
+  --animate-duration: 2.6s;
+}
+
+.main {
+  max-width: 1450px;
+  margin: auto;
+  padding: 0;
+}
+.main .container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0;
+  background-color: white;
+}
+.main .container .Parent {
+  width: 100%;
+  padding-bottom: 60px;
+  margin: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.main .container .ParentWo {
+  width: 100%;
+  height: 682px;
+  margin: auto;
+  background-color: #F7F8F9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .container .BrendParent {
+  width: 100%;
+  height: 300px;
+  margin: auto;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .container .RecProd {
+  width: 100%;
+  height: 630px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F7F8F9;
+}
+.main .container .TovarParent {
+  width: 100%;
+  margin: auto;
+  background-color: #F7F8F9;
+}
+.main .container .footer {
+  width: 100%;
+  padding-top: 40px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnaCDS {
+  color: rgb(0, 0, 0);
+  background-color: #3697E2;
+}
+
+.main .container .Parent .Navbar {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0px 10px 103px -4px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+  background-color: white;
+}
+.main .container .Parent .Navbar .loaderr {
+  width: 0;
+  height: 2px;
+  background-color: #3697E2;
+  transition: 2.3s;
+}
+.main .container .Parent .Navbar .navCChild {
+  width: 100%;
+  height: 40px;
+  background: #F7F8F9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .container .Parent .Navbar .navCChild .navOne {
+  width: 1175px;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.main .container .Parent .Navbar .navCChild .navOne .location {
+  width: 77px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.main .container .Parent .Navbar .navCChild .navOne .location span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.main .container .Parent .Navbar .navCChild .navOne ul {
+  width: 440px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  list-style: none;
+}
+.main .container .Parent .Navbar .navCChild .navOne ul li {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  transition-duration: 0.6s;
+}
+.main .container .Parent .Navbar .navCChild .navOne ul li:hover {
+  color: #3697E2;
+  transition: 0.6s;
+}
+.main .container .Parent .Navbar .navCChild .navOne ul .akkk {
+  padding: 0 5px;
+  border-radius: 5px;
+  background: var(--eeee-36, linear-gradient(0deg, #F1DA09 0%, #F1DA09 100%), linear-gradient(0deg, #EEEE36 0%, #EEEE36 100%), #0867D6);
+}
+.main .container .Parent .Navbar .navCChild .navOne .messenjers {
+  width: 220px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.main .container .Parent .Navbar .navCChild .navOne .messenjers span {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+}
+.main .container .Parent .Navbar .navCChild .navOne .messenjers svg {
+  cursor: pointer;
+}
+.main .container .Parent .Navbar .navCChild .navOne .gmail {
+  width: 155px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.main .container .Parent .Navbar .navCChild .navOne .gmail span {
+  font-size: 16px;
+  line-height: 22px;
+}
+.main .container .Parent .Navbar .navCChild .navOne .register {
+  width: 150px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.main .container .Parent .Navbar .navCChild .navOne .register span {
+  color: #15191C;
+  font-size: 14px;
+  line-height: 18px;
+  cursor: pointer;
+}
+.main .container .Parent .Navbar .navChild {
+  width: 100%;
+  height: 90px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .container .Parent .Navbar .navChild .navTwo {
+  width: 1175px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.main .container .Parent .Navbar .navChild .navTwo .logo {
+  cursor: pointer;
+}
+.main .container .Parent .Navbar .navChild .navTwo .search {
+  width: 732px;
+  height: 48px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid var(--d-7-d-9-dc, #D7D9DC);
+  background: var(--f-7-f-8-fb, #F7F8FB);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.main .container .Parent .Navbar .navChild .navTwo .search label {
+  width: 97%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  color: var(--747883, #747883);
+  font-family: PT Root UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+.main .container .Parent .Navbar .navChild .navTwo .search label input {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  width: 77%;
+}
+.main .container .Parent .Navbar .navChild .navTwo .search label input::-moz-placeholder {
+  color: var(--3697-e-2, #0867D6);
+  font-family: PT Root UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+.main .container .Parent .Navbar .navChild .navTwo .search label input::placeholder {
+  color: var(--3697-e-2, #0867D6);
+  font-family: PT Root UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+.main .container .Parent .Navbar .navChild .navTwo .search img {
+  height: 20px;
+}
+.main .container .Parent .Navbar .navChild .navTwo .ikons {
+  width: 225px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.main .container .Parent .Navbar .navChild .navTwo .ikons svg {
+  cursor: pointer;
+}
+.main .container .Parent .Navbar .navCHTwo {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #E0E1E3;
+  background-color: white;
+  position: relative;
+}
+.main .container .Parent .Navbar .navCHTwo .navTree {
+  width: 1175px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  list-style: none;
+}
+.main .container .Parent .Navbar .navCHTwo .navTree li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--15191-c, #15191C);
+  font-family: PT Root UI;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  cursor: pointer;
+  position: relative;
+  transition-duration: 1.5s;
+}
+.main .container .Parent .Navbar .navCHTwo .navTree li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #3697E2;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 1.5s;
+}
+.main .container .Parent .Navbar .navCHTwo .navTree li:hover {
+  color: #3697E2;
+  transition: all 1.5s;
+}
+.main .container .Parent .Navbar .navCHTwo .navTree li:hover::after {
+  transform: scaleX(1);
+}
+.main .container .Parent .Navbar .navCHTwo .navTree span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--15191-c, #15191C);
+  font-family: PT Root UI;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  cursor: pointer;
+}
+.main .container .Parent .cazuy {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #E0E1E3;
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(11px);
+  position: absolute;
+  transition: 1.3s;
+  transition-duration: 0.1s;
+  opacity: 0;
+  box-shadow: 0px 14px 20px -2px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+}
+.main .container .Parent .cazuy .navTree {
+  width: 1175px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  list-style: none;
+}
+.main .container .Parent .cazuy .navTree li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--15191-c, #15191C);
+  font-family: PT Root UI;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  cursor: pointer;
+  position: relative;
+  transition-duration: 1.5s;
+}
+.main .container .Parent .cazuy .navTree li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #3697E2;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 1.5s;
+}
+.main .container .Parent .cazuy .navTree li:hover {
+  color: #3697E2;
+  transition: all 1.5s;
+}
+.main .container .Parent .cazuy .navTree li:hover::after {
+  transform: scaleX(1);
+}
+.main .container .Parent .cazuy .navTree span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--15191-c, #15191C);
+  font-family: PT Root UI;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  cursor: pointer;
+}
+.main .container .Parent .cazuy .screll {
+  cursor: pointer;
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  border-radius: 0 0 60px 60px;
+  border: 0;
+  bottom: -30px;
+  left: 0;
+  background-color: white;
+  transition: 0.8s;
+  opacity: 1;
+  box-shadow: 0px 14px 20px -2px rgba(0, 0, 0, 0.2);
+}
+.main .container .none {
+  display: flex;
+  flex-direction: column;
+}
+.main .container .none .Parent .Child {
+  width: 1175px;
+  height: 415px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .container .none .Parent .Child .brinciSlide {
+  width: 876px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+  transition: 3s;
+}
+.main .container .none .Parent .Child .brinciSlide .slider {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  transition: 3s;
+}
+.main .container .none .Parent .Child .brinciSlide .slider .slide {
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  transition: 3s;
+}
+.main .container .none .Parent .Child .brinciSlide .slider .slide img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.main .container .none .Parent .Child .brinciSlide .slider .slide:active {
+  cursor: grabbing;
+}
+.main .container .none .Parent .Child .brinciSlide .swiper-buttonn-prev {
+  position: absolute;
+  z-index: 99;
+  left: -20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 11px 10px rgba(255, 255, 255, 0.7);
+}
+.main .container .none .Parent .Child .brinciSlide .swiper-buttonn-prev span {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+.main .container .none .Parent .Child .brinciSlide .swiper-buttonn-next {
+  position: absolute;
+  z-index: 99;
+  right: -20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 11px 10px rgba(255, 255, 255, 0.7);
+}
+.main .container .none .Parent .Child .brinciSlide .swiper-buttonn-next span {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+.main .container .none .Parent .Child .brinciSlide .swiper-pagination {
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  left: 43%;
+  padding: 8px 6px;
+}
+.main .container .none .Parent .Child .ikinciSlide {
+  width: 279px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.main .container .none .Parent .Child .ikinciSlide .slider2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: 3s;
+  border-radius: 10px;
+}
+.main .container .none .Parent .Child .ikinciSlide .slider2 .slideef {
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+}
+.main .container .none .Parent .Child .ikinciSlide .slider2 .slideef img {
+  height: 100%;
+  border-radius: 10px;
+}
+.main .container .none .Parent .Child .ikinciSlide .slider2 .slideef:active {
+  cursor: grabbing;
+}
+.main .container .none .Parent .Child .ikinciSlide .slide-preview {
+  position: absolute;
+  z-index: 99;
+  left: -20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 11px 10px rgba(255, 255, 255, 0.7);
+}
+.main .container .none .Parent .Child .ikinciSlide .slide-preview span {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+.main .container .none .Parent .Child .ikinciSlide .slide-next {
+  position: absolute;
+  z-index: 99;
+  right: -20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 11px 10px rgba(255, 255, 255, 0.7);
+}
+.main .container .none .Parent .Child .ikinciSlide .slide-next span {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+.main .container .none .Parent .Child .ikinciSlide .swiper-pagination {
+  position: absolute;
+  z-index: 99;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  width: -moz-max-content;
+  width: max-content;
+  padding: 5px 3px;
+  left: 35%;
+}
+.main .container .none .Parent .PopularKat {
+  width: 1175px;
+  gap: 20px;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main .container .none .Parent .PopularKat .popNav {
+  width: 100%;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.main .container .none .Parent .PopularKat .popNav h1 {
+  color: var(--15191-c, #15191C);
+  font-family: Circe;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 46px; /* 143.75% */
+}
+.main .container .none .Parent .PopularKat .popNav span {
+  cursor: pointer;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  color: var(--15191-c, #15191C);
+  font-family: PT Root UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 137.5% */
+}
+.main .container .none .Parent .PopularKat .kat {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(150px, 235px));
+}
+.main .container .none .Parent .PopularKat .kat .bolim {
+  background: var(--ffffff, #FFF);
+  height: 207px;
+  border: 1px solid var(--e-0-e-1-e-3, #E0E1E3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  cursor: pointer;
+  transition-duration: 1.6s;
+}
+.main .container .none .Parent .PopularKat .kat .bolim .imgg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+}
+.main .container .none .Parent .PopularKat .kat .bolim .gap {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main .container .none .Parent .PopularKat .kat .bolim .gap p {
+  text-align: center;
+  font-family: PT Root UI;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 133.333% */
+  transition-duration: 0.6s;
+}
+.main .container .none .Parent .PopularKat .kat .bolim .gap span {
+  color: var(--747883, #747883);
+  text-align: center;
+  font-family: PT Root UI;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+}
+.main .container .none .Parent .PopularKat .kat .bolim:hover {
+  transform: scale(1);
+  transition: 1.6s;
+  box-shadow: 0px 0px 73px 13px rgba(0, 0, 0, 0.2);
+}
+.main .container .none .Parent .PopularKat .kat .bolim:hover .gap p {
+  color: #3697E2;
+  transition: 0.6s;
+}
+.main .container .none .ParentWo .xitProdaj {
+  width: 1175px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main .container .none .ParentWo .xitProdaj .xpNav {
+  width: 100%;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.main .container .none .ParentWo .xitProdaj .xpNav h1 {
+  color: var(--15191-c, #15191C);
+  font-family: Circe;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 46px; /* 143.75% */
+}
+.main .container .none .ParentWo .xitProdaj .xpNav article {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.main .container .none .ParentWo .xitProdaj .xpProduct {
+  width: 100%;
+  height: 90%;
+}
+.main .container .none .ParentWo .xitProdaj .xpProduct .prMain {
+  width: 278px;
+  height: 90%;
+  display: flex;
+  align-items: center;
+}
+.main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt {
+  width: 278px;
+  height: 372px;
+  cursor: pointer;
+  padding-top: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  transition-duration: 2.2s;
+}
+.main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first .ckeck {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first .ckeck .checj {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #46AC44;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+.main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first .ckeck span {
+  color: var(--3-a-3-f-43, #3A3F43);
+  font-family: PT Root UI;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+}
+.main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first .imgSlide {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first .imgSlide .slideImg {
+  width: 200px;
+  height: 145px;
+}
+.main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first .imgSlide .slideImg .dspan {
+  width: 100%;
+  height: 100%;
+}
+.main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first .imgSlide .slideImg .dspan img {
+  width: 200px;
+  max-height: 145px;
+}
+.main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first .imgSlide .slideImg .dspan img:active {
+  cursor: grabbing;
+}
+.main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first .imgSlide .slideImg .swiper-scrollbar {
+  width: 100%;
+  height: 1px;
+  bottom: 0px;
+}
+.main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first .imgSlide .slideIkon {
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+.main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first .imgSlide .slideIkon p {
+  opacity: 0;
+  transition-duration: 6s;
+  cursor: pointer;
+}
+.main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd {
+  width: 90%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .vc {
+  color: var(--15191-c, #15191C);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 137.5% */
+}
+.main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .starsss {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .starsss .spaxn {
+  margin-left: 7px;
+}
+.main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .starsss .spaxn span {
+  color: var(--9-a-9-c-9-e, #9A9C9E);
+  font-family: PT Root UI;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+.main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .starsss .star {
+  color: #ccc;
+  font-size: 24px;
+}
+.main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .starsss .star:hover,
+.main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .starsss .star.active {
+  color: #ffcc00;
+}
+.main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .korzina {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .korzina p {
+  width: 70%;
+  gap: 10px;
+}
+.main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .korzina p span {
+  color: var(--15191-c, #15191C);
+  font-family: Circe;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 116.667% */
+}
+.main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .korzina p del {
+  color: var(--9-a-9-c-9-e, #9A9C9E);
+  font-family: PT Root UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 137.5% */
+  text-decoration-line: strikethrough;
+}
+.main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .korzina button {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 1.5s;
+  background: var(--3697-e-2, linear-gradient(0deg, #208EE2 0%, #208EE2 100%), linear-gradient(0deg, #0696E7 0%, #0696E7 100%), #0867D6);
+}
+.main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .korzina button:hover {
+  transform: scale(1.1);
+  transition: 1.5s;
+}
+.main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt:hover {
+  transform: scale(1);
+  transition: 2s;
+}
+.main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt:hover .first .imgSlide .slideIkon p {
+  transition: 1.5s;
+  opacity: 1;
+}
+.main .container .none .BrendParent .brMain {
+  width: 1175px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main .container .none .BrendParent .brMain .brNav {
+  width: 100%;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.main .container .none .BrendParent .brMain .brNav h1 {
+  color: var(--15191-c, #15191C);
+  font-family: Circe;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 46px; /* 143.75% */
+}
+.main .container .none .BrendParent .brMain .brNav span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--1-e-1-f-21, #1E1F21);
+  font-family: PT Root UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 137.5% */
+  cursor: pointer;
+}
+.main .container .none .BrendParent .brMain .brProd {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.main .container .none .BrendParent .brMain .brProd::before, .main .container .none .BrendParent .brMain .brProd::after {
+  background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 170px;
+  z-index: 2;
+}
+.main .container .none .BrendParent .brMain .brProd::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.main .container .none .BrendParent .brMain .brProd::before {
+  left: 0;
+  top: 0;
+}
+.main .container .none .BrendParent .brMain .brProd .beSlide {
+  width: 1620;
+  height: 99%;
+  display: flex;
+  align-items: center;
+  display: flex;
+  animation: scroll 20s linear infinite;
+  display: flex;
+  gap: 150px;
+}
+.main .container .none .BrendParent .brMain .brProd .beSlide .slide {
+  width: 180px;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.main .container .none .RecProd .RecMain {
+  width: 1175px;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.main .container .none .RecProd .RecMain .RecNav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.main .container .none .RecProd .RecMain .RecNav .katol {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.main .container .none .RecProd .RecMain .RecNav .katol button {
+  height: 80%;
+  border: 0;
+  background-color: transparent;
+}
+.main .container .none .RecProd .RecMain .RecNav .katol button span {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9A9C9E;
+  font-family: Circe;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 116.667% */
+  position: relative;
+  transition-duration: 1.5s;
+  cursor: pointer;
+}
+.main .container .none .RecProd .RecMain .RecNav .katol button span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #3697E2;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 1.5s;
+}
+.main .container .none .RecProd .RecMain .RecNav .katol button span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #3697E2;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: all 1.5s;
+}
+.main .container .none .RecProd .RecMain .RecNav .katol button span:hover {
+  color: #3697E2;
+  transition: all 1.5s;
+}
+.main .container .none .RecProd .RecMain .RecNav .katol button span:hover::before {
+  transform: scaleX(1);
+}
+.main .container .none .RecProd .RecMain .RecNav .katol button span:hover::after {
+  transform: scaleX(1);
+}
+.main .container .none .RecProd .RecMain .RecNav .vse {
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  color: var(--15191-c, #15191C);
+  font-family: PT Root UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 137.5% */
+}
+.main .container .none .RecProd .RecMain .RecNav .vse svg {
+  background-color: #3697E2;
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+}
+.main .container .none .RecProd .RecMain .RecPRMain {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent {
+  width: 100%;
+  height: 100%;
+}
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods {
+  width: 278px;
+  height: 90%;
+  display: flex;
+  align-items: center;
+}
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud {
+  width: 278px;
+  height: 372px;
+  padding-top: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  transition-duration: 2.2s;
+  cursor: pointer;
+}
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first .ckeck {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first .ckeck .checj {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #46AC44;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first .ckeck span {
+  color: var(--3-a-3-f-43, #3A3F43);
+  font-family: PT Root UI;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+}
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first .imgSlide {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first .imgSlide .slideImg {
+  width: 200px;
+  height: 145px;
+}
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first .imgSlide .slideImg .dspan {
+  width: 100%;
+  height: 100%;
+}
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first .imgSlide .slideImg .dspan img {
+  width: 200px;
+  max-height: 145px;
+}
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first .imgSlide .slideImg .dspan img:active {
+  cursor: grabbing;
+}
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first .imgSlide .slideImg .swiper-scrollbar {
+  width: 100%;
+  height: 1px;
+  bottom: 0px;
+}
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first .imgSlide .slideIkon {
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first .imgSlide .slideIkon p {
+  opacity: 0;
+  transition-duration: 6s;
+  cursor: pointer;
+}
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first .imgSlide .slideIkon .like svg {
+  background-color: red;
+  color: red;
+}
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd {
+  width: 90%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .vc {
+  color: var(--15191-c, #15191C);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 137.5% */
+}
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .starsss {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .starsss .star {
+  color: #ccc;
+  font-size: 24px;
+}
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .starsss .star:hover,
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .starsss .star.active {
+  color: #ffcc00;
+}
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .starsss .spaxn {
+  margin-left: 7px;
+}
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .starsss .spaxn span {
+  color: var(--9-a-9-c-9-e, #9A9C9E);
+  font-family: PT Root UI;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .korzina {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .korzina p {
+  width: 70%;
+  gap: 10px;
+}
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .korzina p span {
+  color: var(--15191-c, #15191C);
+  font-family: Circe;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 116.667% */
+}
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .korzina p del {
+  color: var(--9-a-9-c-9-e, #9A9C9E);
+  font-family: PT Root UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 137.5% */
+  text-decoration-line: strikethrough;
+}
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .korzina button {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 1.5s;
+  background: var(--3697-e-2, linear-gradient(0deg, #208EE2 0%, #208EE2 100%), linear-gradient(0deg, #0696E7 0%, #0696E7 100%), #0867D6);
+}
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .korzina button:hover {
+  transform: scale(1.1);
+  transition: 1.5s;
+}
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud:hover {
+  transform: scale(1);
+  transition: 2s;
+}
+.main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud:hover .first .imgSlide .slideIkon p {
+  transition: 1.5s;
+  opacity: 1;
+}
+.main .container .none .TovarParent .dostavka {
+  width: 100%;
+  height: 218px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.main .container .none .TovarParent .dostavka .dosMain {
+  width: 1175px;
+  height: 98px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.main .container .none .TovarParent .dostavka .dosMain .dosPr {
+  width: 270px;
+  height: 98px;
+  border-radius: 5px;
+  background: var(--f-2-f-5-f-9, #F2F5F9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  cursor: pointer;
+  transition-duration: 2.2s;
+}
+.main .container .none .TovarParent .dostavka .dosMain .dosPr span {
+  color: var(--3-a-3-f-43, #3A3F43);
+  font-family: PT Root UI;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 133.333% */
+}
+.main .container .none .TovarParent .dostavka .dosMain .dosPr:hover {
+  transform: scale(1);
+  transition: 2.2s;
+  box-shadow: 0px 0px 73px 14px rgba(0, 0, 0, 0.2);
+}
+.main .container .none .TovarParent .nawTovari {
+  width: 100%;
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .container .none .TovarParent .nawTovari .tovarMain {
+  width: 1175px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.main .container .none .TovarParent .nawTovari .tovarMain .tovNav {
+  width: 100%;
+  height: 46px;
+}
+.main .container .none .TovarParent .nawTovari .tovarMain .tovNav h1 {
+  color: var(--15191-c, #15191C);
+  font-family: Circe;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 46px;
+}
+.main .container .none .TovarParent .nawTovari .tovarMain .tovProd {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(150px, 376px));
+  gap: 20px;
+  padding: 40px 0px;
+}
+.main .container .none .TovarParent .nawTovari .tovarMain .tovProd .tprod {
+  height: 325px;
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 0px;
+  border-radius: 5px;
+  background: var(--ffffff, #FFF);
+  transition-duration: 3s;
+  cursor: pointer;
+  transition: 3s;
+  overflow: hidden;
+}
+.main .container .none .TovarParent .nawTovari .tovarMain .tovProd .tprod:hover {
+  box-shadow: 0px 0px 50px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1);
+  transition: 3s;
+}
+.main .container .none .TovarParent .nawTovari .tovarMain .tovProd .tprod .timg {
+  padding: 11px;
+  border-radius: 10px;
+  background: rgba(241, 218, 9, 0.5);
+  height: 70px;
+}
+.main .container .none .TovarParent .nawTovari .tovarMain .tovProd .tprod .tgap {
+  width: 236px;
+}
+.main .container .none .TovarParent .nawTovari .tovarMain .tovProd .tprod .tgap h1 {
+  color: var(--15191-c, #15191C);
+  font-family: PT Root UI;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 133.333% */
+}
+.main .container .none .TovarParent .nawTovari .tovarMain .tovProd .tprod .tgap .otaa {
+  cursor: auto;
+  overflow: hidden;
+}
+.main .container .none .TovarParent .nawTovari .tovarMain .tovProd .tprod .tgap .otaa .kopgap {
+  padding: 10px 5px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 6px;
+  transition: 3s;
+  transition-duration: 3s;
+}
+.main .container .none .TovarParent .nawTovari .tovarMain .tovProd .tprod .tgap .otaa .kopgap span {
+  color: var(--3-a-3-f-43, #3A3F43);
+  font-family: PT Root UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 137.5% */
+  cursor: pointer;
+}
+.main .container .none .TovarParent .nawTovari .tovarMain .tovProd .tprod .tgap .otaa .kopgap span a {
+  color: var(--9-a-9-c-9-e, #9A9C9E);
+  font-family: PT Root UI;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 133.333% */
+}
+.main .container .none .TovarParent .nawTovari .tovarMain .tovProd .tprod .tgap button {
+  width: 130px;
+  height: 32px;
+  border-radius: 5px;
+  border: 1px solid var(--e-0-e-1-e-3, #E0E1E3);
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3697E2;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 3s;
+  transition-duration: 3s;
+}
+.main .container .none .TovarParent .nawTovari .tovarMain .tovProd .tprod .tgap button img {
+  height: 17px;
+}
+.main .container .none .TovarParent .gapPar {
+  width: 100%;
+  height: 380px;
+  margin-top: 30px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.main .container .none .TovarParent .gapPar .gapMain {
+  width: 1175px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 20px;
+}
+.main .container .none .TovarParent .gapPar .gapMain h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 46px; /* 143.75% */
+}
+.main .container .none .TovarParent .gapPar .gapMain span {
+  color: var(--15191-c, #15191C);
+  font-family: PT Root UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 137.5% */
+}
+.main .container .none .TovarParent .gapPar .gapMain h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px; /* 133.333% */
+}
+.main .container .none .TovarParent .gapPar .gapMain ul {
+  padding-left: 15px;
+}
+.main .container .none .TovarParent .gapPar .gapMain ul li {
+  color: var(--3-a-3-f-43, #3A3F43);
+  font-family: PT Root UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 137.5% */
+}
+.main .container .onas {
+  display: none;
+  width: 100%;
+  background-color: white;
+  justify-content: center;
+}
+.main .container .onas .onasParent {
+  width: 1175px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.main .container .onas .onasParent h1 {
+  color: var(--15191-c, #15191C);
+  font-family: Circe;
+  font-size: 32px;
+}
+.main .container .onas .onasParent .brincu {
+  width: 100%;
+  height: 475px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main .container .onas .onasParent .brincu .briRasm {
+  width: 100%;
+  height: 400px;
+  background-color: #F7F8FB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.main .container .onas .onasParent .brincu .briRasm .gapa {
+  width: 625px;
+  height: 276px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 50px;
+  gap: 24px;
+}
+.main .container .onas .onasParent .brincu .briRasm .gapa p {
+  color: var(--15191-c, #15191C);
+  font-family: Circe;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.main .container .onas .onasParent .brincu .briRasm .gapa span {
+  color: var(--15191-c, #15191C);
+  font-family: PT Root UI;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+.main .container .onas .onasParent .brincu .briRasm .leftpad {
+  padding-left: 35px;
+  padding-right: 0px;
+}
+.main .container .onas .onasParent .ikincu {
+  width: 100%;
+  height: 390px;
+}
+.main .container .onas .onasParent .ikincu .ikiGaplaPar {
+  width: 100%;
+  padding-top: 25px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.main .container .onas .onasParent .ikincu .ikiGaplaPar .ikiGapla {
+  width: 270px;
+  height: 312px;
+}
+.main .container .onas .onasParent .ikincu .ikiGaplaPar .ikiGapla .kiGap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main .container .onas .onasParent .ikincu .ikiGaplaPar .ikiGapla .kiGap .kiImg {
+  width: 100%;
+}
+.main .container .onas .onasParent .ikincu .ikiGaplaPar .ikiGapla .kiGap .gpaaa {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main .container .onas .onasParent .ikincu .ikiGaplaPar .ikiGapla .kiGap .gpaaa p {
+  color: var(--15191-c, #15191C);
+  font-family: PT Root UI;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.main .container .onas .onasParent .ikincu .ikiGaplaPar .ikiGapla .kiGap .gpaaa span {
+  color: var(--3-a-3-f-43, #3A3F43);
+  font-family: PT Root UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+.main .container .onas .onasParent .brMain {
+  width: 100%;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main .container .onas .onasParent .brMain h1 {
+  padding-bottom: 25px;
+}
+.main .container .onas .onasParent .brMain .brProd {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.main .container .onas .onasParent .brMain .brProd::before, .main .container .onas .onasParent .brMain .brProd::after {
+  background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 170px;
+  z-index: 2;
+}
+.main .container .onas .onasParent .brMain .brProd::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.main .container .onas .onasParent .brMain .brProd::before {
+  left: 0;
+  top: 0;
+}
+.main .container .onas .onasParent .brMain .brProd .beSlide {
+  width: 1620;
+  height: 99%;
+  display: flex;
+  align-items: center;
+  display: flex;
+  animation: scroll 20s linear infinite;
+  display: flex;
+  gap: 150px;
+}
+.main .container .onas .onasParent .brMain .brProd .beSlide .slide {
+  width: 180px;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.main .container .onas .onasParent .sertifikat {
+  margin-top: 30px;
+  width: 100%;
+  height: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.main .container .onas .onasParent .sertifikat .serPar {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+.main .container .onas .onasParent .sertifikat .serPar .serwrp {
+  width: 278px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.main .container .onas .onasParent .sertifikat .serPar .serwrp .wixx {
+  width: 278px;
+}
+.main .container .onas .onasParent .sotrudniki {
+  width: 100%;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.main .container .onas .onasParent .sotrudniki .parsot {
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+}
+.main .container .onas .onasParent .sotrudniki .parsot .sotOt {
+  width: 279px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+.main .container .onas .onasParent .sotrudniki .parsot .sotOt .sotprod {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border: 1px solid var(--d-7-d-9-dc, #D7D9DC);
+  background: var(--ffffff, #FFF);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main .container .onas .onasParent .sotrudniki .parsot .sotOt .sotprod .sotgap {
+  width: 97%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.main .container .onas .onasParent .sotrudniki .parsot .sotOt .sotprod .sotgap p {
+  width: 85%;
+  color: var(--1-e-1-f-21, #1E1F21);
+  font-family: PT Root UI;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.main .container .onas .onasParent .sotrudniki .parsot .sotOt .sotprod .sotgap span {
+  width: 85%;
+  color: var(--747883, #747883);
+  font-family: PT Root UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+.main .container .dostavka {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+.main .container .dostavka .dostavParent {
+  width: 1175px;
+}
+.main .container .dostavka .dostavParent .firstDos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main .container .dostavka .dostavParent .firstDos h1 {
+  color: var(--15191-c, #15191C);
+  font-family: Circe;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 46px; /* 143.75% */
+}
+.main .container .dostavka .dostavParent .firstDos p {
+  color: var(--15191-c, #15191C);
+  font-family: PT Root UI;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+  margin-bottom: 20px;
+}
+.main .container .dostavka .dostavParent .firstDos .tabke {
+  width: 100%;
+  display: flex;
+}
+.main .container .dostavka .dostavParent .firstDos .tabke img {
+  width: 100%;
+}
+.main .container .dostavka .dostavParent .map {
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+}
+.main .container .dostavka .dostavParent .map .forma {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.main .container .dostavka .dostavParent .map .forma .forgap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main .container .dostavka .dostavParent .map .forma .forgap h1 {
+  color: var(--15191-c, #15191C);
+  font-family: Circe;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 46px; /* 143.75% */
+}
+.main .container .dostavka .dostavParent .map .forma .forgap span {
+  width: 285px;
+  color: var(--3-a-3-f-43, #3A3F43);
+  font-family: PT Root UI;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+}
+.main .container .dostavka .dostavParent .map .forma .forinpu {
+  width: 100%;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+.main .container .dostavka .dostavParent .map .forma .forinpu .name {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.main .container .dostavka .dostavParent .map .forma .forinpu .name #ism {
+  padding: 14px 120px 14px 20px;
+  width: 228px;
+  border-radius: 5px;
+  border: 1px solid var(--d-7-d-9-dc, #D7D9DC);
+  background: var(--f-7-f-8-fb, #F7F8FB);
+  outline: none;
+}
+.main .container .dostavka .dostavParent .map .forma .forinpu .name #nomer {
+  padding: 14px 120px 14px 20px;
+  width: 228px;
+  border-radius: 5px;
+  border: 1px solid var(--d-7-d-9-dc, #D7D9DC);
+  background: var(--f-7-f-8-fb, #F7F8FB);
+  outline: none;
+}
+.main .container .dostavka .dostavParent .map .forma .forinpu #email {
+  width: 476px;
+  padding: 14px 120px 14px 20px;
+  border-radius: 5px;
+  border: 1px solid var(--d-7-d-9-dc, #D7D9DC);
+  background: var(--f-7-f-8-fb, #F7F8FB);
+  outline: 0;
+}
+.main .container .dostavka .dostavParent .map .forma .forinpu #vopros {
+  width: 476px;
+  height: 120px;
+  padding: 14px 120px 14px 20px;
+  border-radius: 5px;
+  border: 1px solid var(--d-7-d-9-dc, #D7D9DC);
+  background: var(--f-7-f-8-fb, #F7F8FB);
+  outline: 0;
+}
+.main .container .dostavka .dostavParent .map .forma .forinpu .zayav {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.main .container .dostavka .dostavParent .map .forma .forinpu .zayav .zayavBtn {
+  border-radius: 5px;
+  background: var(--3697-e-2, linear-gradient(0deg, #208EE2 0%, #208EE2 100%), linear-gradient(0deg, #0696E7 0%, #0696E7 100%), #0867D6);
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 30px;
+  cursor: pointer;
+  transition: 0.6s;
+  transition-duration: 0.6s;
+}
+.main .container .dostavka .dostavParent .map .forma .forinpu .zayav .zayavBtn p {
+  color: var(--ffffff, #FFF);
+  font-family: PT Root UI;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 133.333% */
+}
+.main .container .dostavka .dostavParent .map .forma .forinpu .zayav .zayavBtn:hover {
+  box-shadow: 0px 0px 51px 20px rgba(0, 210, 255, 0.28);
+}
+.main .container .dostavka .dostavParent .map .forma .forinpu .zayav span {
+  width: 236px;
+  color: var(--535-e-69, #535E69);
+  font-family: PT Root UI;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+}
+.main .container .dostavka .dostavParent .map .karta {
+  width: 50%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.main .container .dostavka .dostavParent .map .karta #map {
+  width: 100%;
+  height: 100%;
+}
+.main .container .oplata {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+}
+.main .container .oplata .oplatParent {
+  width: 1175px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.main .container .oplata .oplatParent h1 {
+  color: var(--15191-c, #15191C);
+  font-family: Circe;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 46px; /* 143.75% */
+}
+.main .container .oplata .oplatParent p {
+  color: var(--15191-c, #15191C);
+  font-family: PT Root UI;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+}
+.main .container .oplata .oplatParent .oplgap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main .container .oplata .oplatParent .oplakata {
+  width: 100%;
+  overflow: hidden;
+}
+.main .container .oplata .oplatParent .oplakata img {
+  width: 100%;
+  transition: 2s;
+  transition-duration: 2s;
+}
+.main .container .oplata .oplatParent .oplgap1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main .container .oplata .oplatParent .oplvozvrat {
+  width: 100%;
+  overflow: hidden;
+}
+.main .container .oplata .oplatParent .oplvozvrat img {
+  width: 100%;
+}
+.main .container .oplata .oplatParent .map {
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+}
+.main .container .oplata .oplatParent .map .forma {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.main .container .oplata .oplatParent .map .forma .forgap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main .container .oplata .oplatParent .map .forma .forgap h1 {
+  color: var(--15191-c, #15191C);
+  font-family: Circe;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 46px; /* 143.75% */
+}
+.main .container .oplata .oplatParent .map .forma .forgap span {
+  width: 285px;
+  color: var(--3-a-3-f-43, #3A3F43);
+  font-family: PT Root UI;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+}
+.main .container .oplata .oplatParent .map .forma .forinpu {
+  width: 100%;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+.main .container .oplata .oplatParent .map .forma .forinpu .name {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.main .container .oplata .oplatParent .map .forma .forinpu .name #ism {
+  padding: 14px 120px 14px 20px;
+  width: 228px;
+  border-radius: 5px;
+  border: 1px solid var(--d-7-d-9-dc, #D7D9DC);
+  background: var(--f-7-f-8-fb, #F7F8FB);
+  outline: none;
+}
+.main .container .oplata .oplatParent .map .forma .forinpu .name #nomer {
+  padding: 14px 120px 14px 20px;
+  width: 228px;
+  border-radius: 5px;
+  border: 1px solid var(--d-7-d-9-dc, #D7D9DC);
+  background: var(--f-7-f-8-fb, #F7F8FB);
+  outline: none;
+}
+.main .container .oplata .oplatParent .map .forma .forinpu #email {
+  width: 476px;
+  padding: 14px 120px 14px 20px;
+  border-radius: 5px;
+  border: 1px solid var(--d-7-d-9-dc, #D7D9DC);
+  background: var(--f-7-f-8-fb, #F7F8FB);
+  outline: 0;
+}
+.main .container .oplata .oplatParent .map .forma .forinpu #vopros {
+  width: 476px;
+  height: 120px;
+  padding: 14px 120px 14px 20px;
+  border-radius: 5px;
+  border: 1px solid var(--d-7-d-9-dc, #D7D9DC);
+  background: var(--f-7-f-8-fb, #F7F8FB);
+  outline: 0;
+}
+.main .container .oplata .oplatParent .map .forma .forinpu .zayav {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.main .container .oplata .oplatParent .map .forma .forinpu .zayav .zayavBtn {
+  border-radius: 5px;
+  background: var(--3697-e-2, linear-gradient(0deg, #208EE2 0%, #208EE2 100%), linear-gradient(0deg, #0696E7 0%, #0696E7 100%), #0867D6);
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 30px;
+  cursor: pointer;
+  transition: 0.6s;
+  transition-duration: 0.6s;
+}
+.main .container .oplata .oplatParent .map .forma .forinpu .zayav .zayavBtn p {
+  color: var(--ffffff, #FFF);
+  font-family: PT Root UI;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 133.333% */
+}
+.main .container .oplata .oplatParent .map .forma .forinpu .zayav .zayavBtn:hover {
+  box-shadow: 0px 0px 51px 20px rgba(0, 210, 255, 0.28);
+}
+.main .container .oplata .oplatParent .map .forma .forinpu .zayav span {
+  width: 236px;
+  color: var(--535-e-69, #535E69);
+  font-family: PT Root UI;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+}
+.main .container .oplata .oplatParent .map .karta {
+  width: 50%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.main .container .oplata .oplatParent .map .karta #map1 {
+  width: 100%;
+  height: 100%;
+}
+.main .container .contacts {
+  width: 100%;
+  background-color: white;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main .container .contacts .conePArent {
+  width: 1175px;
+}
+.main .container .contacts .conePArent .sh1 {
+  color: var(--15191-c, #15191C);
+  font-family: Circe;
+  font-size: 32px;
+  line-height: 46px;
+  margin-bottom: 20px;
+}
+.main .container .contacts .conePArent .coneMAin {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.main .container .contacts .conePArent .coneMAin .gaxla {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.main .container .contacts .conePArent .coneMAin .gaxla .ooobinikl {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.main .container .contacts .conePArent .coneMAin .gaxla .ooobinikl .binone {
+  display: flex;
+  gap: 10px;
+}
+.main .container .contacts .conePArent .coneMAin .gaxla .ooobinikl .binone span p {
+  color: var(--15191-c, #15191C);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 137.5% */
+}
+.main .container .contacts .conePArent .coneMAin .gaxla .ooobinikl .binone span span {
+  color: var(--3-a-3-f-43, #3A3F43);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 137.5% */
+}
+.main .container .contacts .conePArent .coneMAin .gaxla .zvonite {
+  display: flex;
+  width: 544px;
+  padding: 25px 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  border-radius: 5px;
+  background: var(--ffffff, #FFF);
+  box-shadow: 0px 5px 30px 0px rgba(63, 66, 69, 0.15);
+}
+.main .container .contacts .conePArent .coneMAin .gaxla .zvonite .telefoni {
+  display: flex;
+  gap: 8px;
+}
+.main .container .contacts .conePArent .coneMAin .gaxla .zvonite .telefoni .nonerr {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.main .container .contacts .conePArent .coneMAin .gaxla .zvonite .telefoni .nonerr .mola {
+  display: flex;
+  gap: 20px;
+}
+.main .container .contacts .conePArent .coneMAin .gaxla .zvonite .piwite {
+  display: flex;
+  gap: 8px;
+}
+.main .container .contacts .conePArent .coneMAin .gaxla .zvonite .piwite .aAAQ {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.main .container .contacts .conePArent .coneMAin .gaxla .zvonite .piwite .aAAQ a {
+  color: var(--3697-e-2, #0867D6);
+  font-family: PT Root UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 137.5% */
+  text-decoration-line: underline;
+}
+.main .container .contacts .conePArent .coneMAin .gaxla .rekvizit {
+  display: flex;
+}
+.main .container .contacts .conePArent .coneMAin .gaxla .rekvizit article {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main .container .contacts .conePArent .coneMAin .gaxla .rekvizit article h1 {
+  font-size: 20px;
+  line-height: 15px;
+}
+.main .container .contacts .conePArent .coneMAin .gaxla .rekvizit article p {
+  display: flex;
+  gap: 10px;
+}
+.main .container .contacts .conePArent .coneMAin .gaxla .rekvizit article p span {
+  color: var(--747883, #747883);
+  font-family: PT Root UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 137.5% */
+}
+.main .container .contacts .conePArent .coneMAin .gaxla .rekvizit article p span b {
+  color: #15191C;
+  font-weight: 400;
+}
+.main .container .contacts .conePArent .coneMAin .gaxla .rekvizit .rIkons p img {
+  width: 40px;
+  height: 40px;
+}
+.main .container .contacts .conePArent .coneMAin .cForma {
+  width: 50%;
+  height: 100%;
+}
+.main .container .contacts .conePArent .coneMAin .cForma .forma {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main .container .contacts .conePArent .coneMAin .cForma .forma h1 {
+  color: var(--15191-c, #15191C);
+  font-family: Circe;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 46px; /* 143.75% */
+}
+.main .container .contacts .conePArent .coneMAin .cForma .forma .forinpu {
+  width: 100%;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+.main .container .contacts .conePArent .coneMAin .cForma .forma .forinpu .name {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.main .container .contacts .conePArent .coneMAin .cForma .forma .forinpu .name #ism {
+  padding: 14px 120px 14px 20px;
+  width: 228px;
+  border-radius: 5px;
+  border: 1px solid var(--d-7-d-9-dc, #D7D9DC);
+  background: var(--f-7-f-8-fb, #F7F8FB);
+  outline: none;
+}
+.main .container .contacts .conePArent .coneMAin .cForma .forma .forinpu .name #nomer {
+  padding: 14px 120px 14px 20px;
+  width: 228px;
+  border-radius: 5px;
+  border: 1px solid var(--d-7-d-9-dc, #D7D9DC);
+  background: var(--f-7-f-8-fb, #F7F8FB);
+  outline: none;
+}
+.main .container .contacts .conePArent .coneMAin .cForma .forma .forinpu #email {
+  width: 476px;
+  padding: 14px 120px 14px 20px;
+  border-radius: 5px;
+  border: 1px solid var(--d-7-d-9-dc, #D7D9DC);
+  background: var(--f-7-f-8-fb, #F7F8FB);
+  outline: 0;
+}
+.main .container .contacts .conePArent .coneMAin .cForma .forma .forinpu #vopros {
+  width: 476px;
+  height: 120px;
+  padding: 14px 120px 14px 20px;
+  border-radius: 5px;
+  border: 1px solid var(--d-7-d-9-dc, #D7D9DC);
+  background: var(--f-7-f-8-fb, #F7F8FB);
+  outline: 0;
+}
+.main .container .contacts .conePArent .coneMAin .cForma .forma .forinpu .zayav {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.main .container .contacts .conePArent .coneMAin .cForma .forma .forinpu .zayav .zayavBtn {
+  border-radius: 5px;
+  background: var(--3697-e-2, linear-gradient(0deg, #208EE2 0%, #208EE2 100%), linear-gradient(0deg, #0696E7 0%, #0696E7 100%), #0867D6);
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 30px;
+  cursor: pointer;
+  transition: 0.6s;
+  transition-duration: 0.6s;
+}
+.main .container .contacts .conePArent .coneMAin .cForma .forma .forinpu .zayav .zayavBtn p {
+  color: var(--ffffff, #FFF);
+  font-family: PT Root UI;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 133.333% */
+}
+.main .container .contacts .conePArent .coneMAin .cForma .forma .forinpu .zayav .zayavBtn:hover {
+  box-shadow: 0px 0px 51px 20px rgba(0, 210, 255, 0.28);
+}
+.main .container .contacts .conePArent .coneMAin .cForma .forma .forinpu .zayav span {
+  width: 236px;
+  color: var(--535-e-69, #535E69);
+  font-family: PT Root UI;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+}
+.main .container .footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+.main .container .footer .laykParent {
+  width: 100%;
+  height: 80px;
+  background: var(--535-e-69, #535E69);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .container .footer .laykParent .laykMain {
+  width: 1175px;
+  height: 32px;
+  display: flex;
+  gap: 44px;
+}
+.main .container .footer .laykParent .laykMain .ciziq {
+  width: 1px;
+  height: 100%;
+  border: 1px dashed #D7D9DC;
+}
+.main .container .footer .laykParent .laykMain .kozPar {
+  width: 241px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.main .container .footer .laykParent .laykMain .kozPar .koz {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  color: var(--ffffff, #FFF);
+  font-family: PT Root UI;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 140% */
+}
+.main .container .footer .laykParent .laykMain .kozPar .dum {
+  width: 24px;
+  height: 24px;
+  background-color: #9A9C9E;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .container .footer .laykParent .laykMain .ikkk {
+  width: 281px;
+}
+.main .container .footer .laykParent .laykMain .uchhh {
+  width: 203px;
+}
+.main .container .footer .laykParent .laykMain .tut {
+  width: 179px;
+}
+.main .container .footer .footMain {
+  width: 1175px;
+  height: 350px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 40px 0px;
+}
+.main .container .footer .footMain .market {
+  max-width: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.main .container .footer .footMain .market .fotgap {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main .container .footer .footMain .market .fotgap span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main .container .footer .footMain .market .fotgap span svg {
+  height: 44px;
+}
+.main .container .footer .footMain .fotKatalog {
+  max-width: 138px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.main .container .footer .footMain .fotKatalog h1 {
+  color: var(--15191-c, #15191C);
+  font-family: PT Root UI;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 140% */
+}
+.main .container .footer .footMain .fotKatalog article {
+  display: flex;
+  flex-direction: column;
+}
+.main .container .footer .footMain .fotKatalog article span {
+  color: var(--3-a-3-f-43, #3a3f43);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px; /* 137.5% */
+  cursor: pointer;
+}
+.main .container .footer .footMain .fotKatalog article span:hover {
+  color: #3697E2;
+}
+.main .container .footer .footMain .info {
+  max-width: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+.main .container .footer .footMain .info h1 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px; /* 140% */
+}
+.main .container .footer .footMain .info article {
+  display: flex;
+  flex-direction: column;
+}
+.main .container .footer .footMain .info article span {
+  color: var(--3-a-3-f-43, #3A3F43);
+  font-size: 16px;
+  line-height: 22px; /* 137.5% */
+  cursor: pointer;
+}
+.main .container .footer .footMain .info article span:hover {
+  color: #3697E2;
+}
+.main .container .footer .footMain .info img {
+  cursor: pointer;
+}
+.main .container .footer .footMain .kontak {
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.main .container .footer .footMain .kontak h1 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px; /* 140% */
+}
+.main .container .footer .footMain .kontak .fotmessg {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main .container .footer .footMain .kontak .fotmessg span {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px; /* 116.667% */
+}
+.main .container .footer .footMain .kontak .fotmessg .fmessah {
+  display: flex;
+}
+.main .container .footer .footMain .kontak .fotmessg .fmessah img {
+  height: 50px;
+  width: 56px;
+  transition-duration: 1.5s;
+  cursor: pointer;
+}
+.main .container .footer .footMain .kontak .fotmessg .fmessah img:hover {
+  transform: scale(1.2);
+  transition: 1.5s;
+}
+.main .container .footer .footMain .kontak .kgap {
+  display: flex;
+  flex-direction: column;
+}
+.main .container .footer .footMain .kontak .kgap span {
+  color: var(--3-a-3-f-43, #3A3F43);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px; /* 137.5% */
+  cursor: pointer;
+}
+.main .container .footer .footMain .kontak .kgap span:hover {
+  color: #3697E2;
+}
+.main .container .footer .footMain .kontak .fbtn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.main .container .footer .footMain .kontak .fbtn button {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  cursor: pointer;
+}
+.main .container .footer .footMain .kontak .fbtn .podpis {
+  border-radius: 5px;
+  background: var(--ffffff, #FFF);
+  box-shadow: 0px 5px 20px 0px rgba(63, 66, 69, 0.05);
+}
+.main .container .footer .footMain .kontak .fbtn .podpis span {
+  color: #3697E2;
+}
+.main .container .footer .footMain .kontak .fbtn .skachat {
+  border-radius: 5px;
+  background: var(--eeee-36, linear-gradient(0deg, #F1DA09 0%, #F1DA09 100%), linear-gradient(0deg, #EEEE36 0%, #EEEE36 100%), #0867D6);
+  color: #3A3F43;
+}
+.main .container .footer .foroxiri {
+  margin-top: 20px;
+  width: 100%;
+  height: 60px;
+  background: var(--f-2-f-5-f-9, #F2F5F9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .container .footer .foroxiri .foxitMain {
+  width: 1175px;
+  height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.main .container .footer .foroxiri .foxitMain p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.main .container .footer .foroxiri .foxitMain span {
+  color: var(--3-a-3-f-43, #3A3F43);
+  font-family: PT Root UI;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+}
+
+#scroll-container {
+  overflow-y: scroll;
+  height: 100vh; /* Задает высоту контейнера прокрутки, чтобы создать вертикальную прокрутку */
+  scroll-behavior: smooth; /* Добавляет плавность к прокрутке */
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(229, 229, 229);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #3697E2 0%, #00C9C9 100%);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg, #00C9C9 0%, #3697E2 100%);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1080px);
+    -webkit-transform: translateX(-1080px);
+    -moz-transform: translateX(-1080px);
+    -ms-transform: translateX(-1080px);
+    -o-transform: translateX(-1080px);
+  }
+}
+@keyframes strelka {
+  0% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-4px);
+    -webkit-transform: translateY(-4px);
+    -moz-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    -o-transform: translateY(-4px);
+  }
+  60% {
+    transform: translateY(-2px);
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
+  }
+}
+@keyframes srtelka {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
+@media (max-width: 1175px) {
+  .main .container .Parent .Navbar .navCChild .navOne {
+    width: 100%;
+  }
+  .main .container .Parent .Navbar .navCChild .navOne #addd {
+    display: none;
+  }
+  .main .container .Parent .Navbar .navChild .navTwo {
+    width: 100%;
+  }
+  .main .container .Parent .Navbar .navCHTwo .navTree {
+    width: 100%;
+  }
+  .main .container .none .Parent .Child {
+    width: 100%;
+  }
+  .main .container .none .Parent .Child .brinciSlide {
+    width: 65%;
+  }
+  .main .container .none .Parent .Child .ikinciSlide {
+    width: 30%;
+  }
+  .main .container .none .Parent .PopularKat {
+    width: 100%;
+  }
+  .main .container .none .ParentWo .xitProdaj {
+    width: 100%;
+  }
+  .main .container .none .BrendParent .brMain {
+    width: 100%;
+  }
+  .main .container .none .RecProd .RecMain {
+    width: 100%;
+  }
+  .main .container .none .TovarParent .dostavka .dosMain {
+    width: 100%;
+  }
+  .main .container .none .TovarParent .nawTovari .tovarMain {
+    width: 100%;
+  }
+  .main .container .none .TovarParent .gapPar .gapMain {
+    width: 100%;
+  }
+  .main .container .footer .laykParent .laykMain {
+    width: 100%;
+  }
+  .main .container .footer .footMain {
+    width: 100%;
+  }
+  .main .container .footer .foroxiri .foxitMain {
+    width: 100%;
+  }
+}
+@media (max-width: 1075px) {
+  .main .container .Parent .cazuy .navTree li {
+    font-size: 17px;
+  }
+  .main .container .Parent .cazuy .navTree span {
+    display: none;
+  }
+  .main .container .Parent .Navbar .navCChild .navOne .location {
+    width: 65px;
+    gap: 4px;
+  }
+  .main .container .Parent .Navbar .navCChild .navOne .location span {
+    font-size: 13px;
+  }
+  .main .container .Parent .Navbar .navCChild .navOne .location img {
+    height: 18px;
+  }
+  .main .container .Parent .Navbar .navCChild .navOne ul {
+    width: 330px;
+  }
+  .main .container .Parent .Navbar .navCChild .navOne .messenjers {
+    width: 160px;
+  }
+  .main .container .Parent .Navbar .navCChild .navOne .messenjers svg {
+    height: 25px;
+    width: 20px;
+  }
+  .main .container .Parent .Navbar .navCChild .navOne .messenjers span {
+    font-size: 14px;
+  }
+  .main .container .Parent .Navbar .navCChild .navOne .gmail {
+    width: 135px;
+  }
+  .main .container .Parent .Navbar .navCChild .navOne .gmail span {
+    font-size: 14px;
+  }
+  .main .container .Parent .Navbar .navChild {
+    height: 80px;
+  }
+  .main .container .Parent .Navbar .navChild .navTwo .search {
+    width: 580px;
+  }
+  .main .container .Parent .Navbar .navChild .navTwo .search label {
+    font-size: 14px;
+    gap: 10px;
+  }
+  .main .container .Parent .Navbar .navChild .navTwo .ikons {
+    width: 140px;
+  }
+  .main .container .Parent .Navbar .navChild .navTwo .ikons span svg {
+    width: 25px;
+  }
+  .main .container .Parent .Navbar .navCHTwo .navTree li {
+    font-size: 17px;
+  }
+  .main .container .Parent .Navbar .navCHTwo .navTree span {
+    display: none;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt {
+    height: 350px;
+    padding: 5px 0px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first .imgSlide .slideImg {
+    width: 170px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first .imgSlide .slideImg .dspan img {
+    width: 150px;
+    max-height: 130px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .vc {
+    font-size: 15px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .starsss .star {
+    font-size: 22px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .starsss .spaxn {
+    font-size: 13px;
+  }
+  .main .container .none .RecProd .RecMain .RecNav .katol {
+    gap: 20px;
+  }
+  .main .container .none .RecProd .RecMain .RecNav .katol button span {
+    font-size: 20px;
+  }
+  .main .container .none .RecProd .RecMain .RecNav .vse {
+    font-size: 14px;
+    gap: 8px;
+  }
+  .main .container .none .RecProd .RecMain .RecNav .vse svg {
+    width: 15px;
+    height: 15px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods {
+    width: 250px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud {
+    width: 100%;
+    height: 350px;
+    padding-bottom: 5px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first {
+    gap: 20px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first .imgSlide .slideImg {
+    width: 170px;
+    height: 135px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first .imgSlide .slideImg .dspan img {
+    width: 100%;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .vc {
+    font-size: 15px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .starsss .star {
+    font-size: 22px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .starsss .spaxn {
+    font-size: 14px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .starsss .spaxn span {
+    font-size: 12px;
+  }
+  .main .container .footer .laykParent .laykMain {
+    gap: 25px;
+  }
+  .main .container .footer .laykParent .laykMain .kozPar {
+    width: 220px;
+  }
+  .main .container .footer .laykParent .laykMain .kozPar .koz {
+    font-size: 19px;
+    gap: 10px;
+  }
+  .main .container .footer .laykParent .laykMain .ikkk {
+    width: 260px;
+  }
+  .main .container .footer .laykParent .laykMain .uchhh {
+    width: 170px;
+  }
+  .main .container .footer .laykParent .laykMain .tut {
+    width: 150px;
+  }
+}
+@media (max-width: 975px) {
+  .main .container .none .ParentWo {
+    height: 580px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain {
+    width: 240px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt {
+    width: 100%;
+    height: 320px;
+    padding-bottom: 0px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first .imgSlide {
+    height: 130px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first .imgSlide .slideImg {
+    width: 160px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first .imgSlide .slideImg .dspan img {
+    width: 100%;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd {
+    height: 38%;
+    gap: 7px;
+    justify-content: center;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .vc {
+    font-size: 14px;
+    line-height: 15px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .starsss .star {
+    font-size: 20px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .starsss .spaxn {
+    font-size: 12px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .starsss .spaxn span {
+    font-size: 10px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .korzina p span {
+    font-size: 20px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .korzina p del {
+    font-size: 14px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .korzina button {
+    width: 30px;
+    height: 30px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .korzina button img {
+    width: 20px;
+    height: 20px;
+  }
+  .main .container .none .RecProd {
+    height: 550px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods {
+    width: 250px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud {
+    width: 100%;
+    height: 320px;
+    padding-bottom: 3px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first .imgSlide {
+    height: 130px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first .imgSlide .slideImg {
+    width: 160px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first .imgSlide .slideImg .dspan img {
+    width: 100%;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd {
+    height: 38%;
+    gap: 7px;
+    justify-content: center;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .vc {
+    font-size: 14px;
+    line-height: 15px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .starsss .star {
+    font-size: 20px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .starsss .spaxn {
+    font-size: 12px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .starsss .spaxn span {
+    font-size: 10px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .korzina p span {
+    font-size: 20px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .korzina p del {
+    font-size: 14px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .korzina button {
+    width: 30px;
+    height: 30px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .korzina button img {
+    width: 20px;
+    height: 20px;
+  }
+  .main .container .none .TovarParent .nawTovari .tovarMain .tovProd {
+    gap: 10px;
+  }
+  .main .container .none .TovarParent .nawTovari .tovarMain .tovProd .tprod {
+    gap: 10px;
+  }
+  .main .container .none .TovarParent .nawTovari .tovarMain .tovProd .tprod .tgap h1 {
+    font-size: 16px;
+  }
+  .main .container .none .TovarParent .nawTovari .tovarMain .tovProd .tprod .tgap .otaa .kopgap span {
+    font-size: 15px;
+  }
+  .main .container .none .TovarParent .nawTovari .tovarMain .tovProd .tprod .tgap button {
+    width: 110px;
+  }
+  .main .container .none .TovarParent .nawTovari .tovarMain .tovProd .tprod .tgap button span {
+    font-size: 12px;
+  }
+  .main .container .none .TovarParent .nawTovari .tovarMain .tovProd .tprod .tgap button img {
+    height: 14px;
+  }
+}
+@media (max-width: 875px) {
+  .main .container .Parent .cazuy .navTree li {
+    font-size: 16px;
+  }
+  .main .container .Parent .cazuy .navTree .zsdvsdvzxdv {
+    display: none;
+  }
+  .main .container .Parent .Navbar {
+    height: 150px;
+  }
+  .main .container .Parent .Navbar .navCChild .navOne ul {
+    width: 280px;
+  }
+  .main .container .Parent .Navbar .navCChild .navOne ul .akkk {
+    display: none;
+  }
+  .main .container .Parent .Navbar .navCChild .navOne .messenjers {
+    width: 100px;
+  }
+  .main .container .Parent .Navbar .navCChild .navOne .messenjers svg {
+    width: 25px;
+  }
+  .main .container .Parent .Navbar .navCChild .navOne .messenjers span {
+    display: none;
+  }
+  .main .container .Parent .Navbar .navChild {
+    height: 65%;
+  }
+  .main .container .Parent .Navbar .navChild .navTwo .search {
+    width: 500px;
+    height: 40px;
+  }
+  .main .container .Parent .Navbar .navChild .navTwo .search label {
+    font-size: 12px;
+    gap: 5px;
+  }
+  .main .container .Parent .Navbar .navChild .navTwo .search label input::-moz-placeholder {
+    font-size: 14px;
+  }
+  .main .container .Parent .Navbar .navChild .navTwo .search label input::placeholder {
+    font-size: 14px;
+  }
+  .main .container .Parent .Navbar .navChild .navTwo .search img {
+    width: 15px;
+    height: 15px;
+  }
+  .main .container .Parent .Navbar .navChild .navTwo .ikons {
+    width: 130px;
+    height: 26px;
+  }
+  .main .container .Parent .Navbar .navChild .navTwo .ikons span svg {
+    width: 22px;
+    height: 22px;
+  }
+  .main .container .Parent .Navbar .navCHTwo .navTree .zsdvsdvzxdv {
+    display: none;
+  }
+  .main .container .Parent .Navbar .navCHTwo .navTree li {
+    font-size: 16px;
+  }
+  .main .container .none .ParentWo {
+    height: 550px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain {
+    width: 220px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt {
+    height: 310px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first .imgSlide {
+    height: 125px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first .imgSlide .slideImg {
+    width: 140px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd {
+    height: 37%;
+    gap: 6px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .vc {
+    font-size: 13px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .starsss .star {
+    font-size: 19px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .starsss .spaxn {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .starsss .spaxn span {
+    font-size: 8px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .korzina p span {
+    font-size: 19px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .korzina p del {
+    font-size: 13px;
+  }
+  .main .container .none .BrendParent {
+    height: 250px;
+  }
+  .main .container .none .RecProd {
+    height: 530px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods {
+    width: 220px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud {
+    height: 310px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first .imgSlide {
+    height: 125px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first .imgSlide .slideImg {
+    width: 140px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd {
+    height: 37%;
+    gap: 6px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .vc {
+    font-size: 13px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .starsss .star {
+    font-size: 19px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .starsss .spaxn {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .starsss .spaxn span {
+    font-size: 8px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .korzina p span {
+    font-size: 19px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .korzina p del {
+    font-size: 13px;
+  }
+}
+@media (max-width: 775px) {
+  .main .container .none .Parent .PopularKat {
+    gap: 10px;
+  }
+  .main .container .none .Parent .PopularKat .popNav h1 {
+    font-size: 22px;
+  }
+  .main .container .none .Parent .PopularKat .popNav span {
+    width: 110px;
+    font-size: 12px;
+    gap: 2px;
+    font-weight: 400;
+  }
+  .main .container .none .Parent .PopularKat .popNav span svg {
+    width: 4;
+    height: 7px;
+  }
+  .main .container .none .Parent .PopularKat .kat {
+    grid-template-columns: repeat(3, minmax(120px, 1fr));
+  }
+  .main .container .none .Parent .PopularKat .kat .bolim {
+    height: 180px;
+    gap: 10px;
+  }
+  .main .container .none .Parent .PopularKat .kat .bolim .imgg {
+    width: -moz-min-content;
+    width: min-content;
+  }
+  .main .container .none .Parent .PopularKat .kat .bolim .gap p {
+    font-size: 16px;
+  }
+  .main .container .none .Parent .PopularKat .kat .bolim .gap span {
+    font-size: 12px;
+  }
+  .main .container .none .ParentWo {
+    height: 450px;
+  }
+  .main .container .none .ParentWo .xitProdaj {
+    height: 360px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpNav {
+    height: 40px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpNav h1 {
+    font-size: 25px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpNav article {
+    width: 150px;
+    gap: 8px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpNav article span {
+    font-size: 12px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpNav article span svg {
+    height: 7px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct {
+    height: 80%;
+    display: flex;
+    align-items: center;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain {
+    width: 180px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt {
+    height: 270px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first .ckeck .checj {
+    width: 13px;
+    height: 13px;
+    font-size: 8px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first .ckeck span {
+    font-size: 11px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first .imgSlide .slideImg {
+    width: 100px;
+    height: 100px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first .imgSlide .slideIkon p svg {
+    width: 16px;
+    height: 16px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .vc {
+    font-size: 11px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .starsss {
+    gap: 2px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .starsss .star {
+    font-size: 18px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .starsss .spaxn {
+    font-size: 9px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .korzina p {
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .korzina p span {
+    font-size: 17px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .korzina p del {
+    font-size: 11px;
+  }
+  .main .container .none .BrendParent {
+    height: 200px;
+  }
+  .main .container .none .BrendParent .brMain {
+    height: 180px;
+  }
+  .main .container .none .BrendParent .brMain .brNav {
+    height: 30px;
+  }
+  .main .container .none .BrendParent .brMain .brNav h1 {
+    font-size: 22px;
+  }
+  .main .container .none .BrendParent .brMain .brNav span {
+    display: none;
+  }
+  .main .container .none .BrendParent .brMain .brProd .beSlide .slide {
+    width: 150px;
+    height: 80px;
+    overflow: hidden;
+  }
+  .main .container .none .RecProd {
+    height: -moz-max-content;
+    height: max-content;
+    padding: 30px 0px;
+  }
+  .main .container .none .RecProd .RecMain {
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .main .container .none .RecProd .RecMain .RecNav .katol {
+    gap: 10px;
+  }
+  .main .container .none .RecProd .RecMain .RecNav .katol button span {
+    font-size: 16px;
+  }
+  .main .container .none .RecProd .RecMain .RecNav .vse {
+    font-size: 10px;
+    gap: 5px;
+  }
+  .main .container .none .RecProd .RecMain .RecNav .vse svg {
+    width: 8px;
+    height: 8px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain {
+    height: -moz-max-content;
+    height: max-content;
+    padding: 10px 0px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent {
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+    align-items: center;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods {
+    width: 180px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud {
+    height: 270px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first .ckeck .checj {
+    width: 13px;
+    height: 13px;
+    font-size: 8px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first .ckeck span {
+    font-size: 11px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first .imgSlide .slideImg {
+    width: 100px;
+    height: 100px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first .imgSlide .slideIkon p svg {
+    width: 16px;
+    height: 16px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .vc {
+    font-size: 11px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .starsss {
+    gap: 2px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .starsss .star {
+    font-size: 18px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .starsss .spaxn {
+    font-size: 9px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .korzina p {
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .korzina p span {
+    font-size: 17px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .korzina p del {
+    font-size: 11px;
+  }
+  .main .container .none .TovarParent .dostavka {
+    height: -moz-max-content;
+    height: max-content;
+    padding: 25px;
+  }
+  .main .container .none .TovarParent .dostavka .dosMain {
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .main .container .none .TovarParent .dostavka .dosMain .dosPr {
+    width: 150px;
+    height: 60px;
+  }
+  .main .container .none .TovarParent .dostavka .dosMain .dosPr span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .main .container .none .TovarParent .dostavka .dosMain .dosPr img {
+    width: 30px;
+    height: 30px;
+  }
+  .main .container .none .TovarParent .nawTovari .tovarMain .tovProd {
+    gap: 10px;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+  .main .container .footer .laykParent {
+    display: none;
+  }
+  .main .container .footer .footMain .fotKatalog {
+    display: none;
+  }
+}
+@media (max-width: 675px) {
+  .marCh {
+    margin-top: 140px;
+  }
+  .main .container .Parent {
+    padding-bottom: 30px;
+  }
+  .main .container .Parent .Navbar .navCChild .navOne .location {
+    width: 50px;
+    gap: 3px;
+  }
+  .main .container .Parent .Navbar .navCChild .navOne .location img {
+    width: 13px;
+    height: 13px;
+  }
+  .main .container .Parent .Navbar .navCChild .navOne .location span {
+    font-size: 11px;
+  }
+  .main .container .Parent .Navbar .navCChild .navOne .messenjers {
+    width: 60px;
+  }
+  .main .container .Parent .Navbar .navCChild .navOne .messenjers svg {
+    width: 18px;
+    height: 18px;
+  }
+  .main .container .Parent .Navbar .navCChild .navOne .gmail {
+    display: none;
+  }
+  .main .container .Parent .Navbar .navCChild .navOne .register {
+    width: 95px;
+  }
+  .main .container .Parent .Navbar .navCChild .navOne .register svg {
+    width: 15px;
+    height: 15px;
+    display: none;
+  }
+  .main .container .Parent .Navbar .navCChild .navOne .register span {
+    font-size: 11px;
+  }
+  .main .container .Parent .Navbar .navChild {
+    height: 50%;
+  }
+  .main .container .Parent .Navbar .navChild .navTwo .logo img {
+    width: 120px;
+  }
+  .main .container .Parent .Navbar .navChild .navTwo .search {
+    width: 330px;
+    height: 30px;
+  }
+  .main .container .Parent .Navbar .navChild .navTwo .search label span {
+    display: none;
+  }
+  .main .container .Parent .Navbar .navChild .navTwo .search label input {
+    width: 90%;
+    font-size: 10px;
+  }
+  .main .container .Parent .Navbar .navChild .navTwo .search label input::-moz-placeholder {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+  .main .container .Parent .Navbar .navChild .navTwo .search label input::placeholder {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+  .main .container .Parent .Navbar .navChild .navTwo .search img {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+  }
+  .main .container .Parent .Navbar .navChild .navTwo .ikons {
+    width: 90px;
+    margin-right: 10px;
+  }
+  .main .container .Parent .Navbar .navChild .navTwo .ikons span svg {
+    width: 15px;
+    height: 15px;
+  }
+  .main .container .Parent .Navbar .navCHTwo .navTree li {
+    font-size: 14px;
+  }
+  .main .container .Parent .Navbar .navCHTwo .navTree .dalnomer {
+    display: none;
+  }
+  .main .container .Parent .cazuy .navTree li {
+    font-size: 14px;
+  }
+  .main .container .Parent .cazuy .navTree .dalnomer {
+    display: none;
+  }
+  .main .container .Parent .cazuy .screll {
+    width: 40px;
+    height: 20px;
+    bottom: -18px;
+  }
+  .main .container .Parent .cazuy .screll img {
+    width: 14px;
+    height: 14px;
+  }
+  .main .container .none .Parent .Child {
+    height: 300px;
+  }
+  .main .container .none .Parent .Child .brinciSlide .swiper-pagination {
+    display: none;
+  }
+  .main .container .none .Parent .Child .ikinciSlide .swiper-pagination {
+    display: none;
+  }
+  .main .container .none .Parent .PopularKat .kat .bolim {
+    height: 150px;
+  }
+  .main .container .none .Parent .PopularKat .kat .bolim .imgg img {
+    width: 70px;
+    height: 70px;
+  }
+  .main .container .none .Parent .PopularKat .kat .bolim .gap p {
+    font-size: 13px;
+  }
+  .main .container .none .Parent .PopularKat .kat .bolim .gap span {
+    display: none;
+  }
+  .main .container .none .ParentWo {
+    height: -moz-max-content;
+    height: max-content;
+    padding: 25px 0px;
+  }
+  .main .container .none .ParentWo .xitProdaj {
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpNav h1 {
+    font-size: 20px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpNav article {
+    justify-content: flex-end;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpNav article span {
+    font-size: 10px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpNav article span svg {
+    height: 6px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct {
+    height: -moz-max-content;
+    height: max-content;
+    padding: 10px 0px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain {
+    width: 160px;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt {
+    height: 230px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first {
+    height: 130px;
+    gap: 10px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first .ckeck .checj {
+    width: 10px;
+    height: 10px;
+    font-size: 6px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first .ckeck span {
+    font-size: 9px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first .imgSlide {
+    height: 100px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first .imgSlide .slideImg {
+    height: 90px;
+    width: 80%;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first .imgSlide .slideIkon {
+    display: none;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .vc {
+    font-size: 10px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .starsss .star {
+    font-size: 17px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .starsss .spaxn {
+    margin-left: 0px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .starsss .spaxn span {
+    display: none;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .korzina p span {
+    font-size: 16px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .korzina p del {
+    font-size: 10px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .korzina button {
+    width: 23px;
+    height: 23px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .korzina button img {
+    width: 14px;
+    height: 14px;
+  }
+  .main .container .none .RecProd .RecMain .RecNav .katol .skidki {
+    display: none;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods {
+    width: 160px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud {
+    height: 230px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first {
+    height: 130px;
+    gap: 10px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first .ckeck .checj {
+    width: 10px;
+    height: 10px;
+    font-size: 6px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first .ckeck span {
+    font-size: 9px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first .imgSlide {
+    height: 100px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first .imgSlide .slideImg {
+    height: 90px;
+    width: 80%;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first .imgSlide .slideIkon {
+    display: none;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .vc {
+    font-size: 10px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .starsss .star {
+    font-size: 17px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .starsss .spaxn {
+    margin-left: 0px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .starsss .spaxn span {
+    display: none;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .korzina p span {
+    font-size: 16px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .korzina p del {
+    font-size: 10px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .korzina button {
+    width: 23px;
+    height: 23px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .korzina button img {
+    width: 14px;
+    height: 14px;
+  }
+  .main .container .none .TovarParent .dostavka .dosMain {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    gap: 10px;
+    justify-items: center;
+  }
+  .main .container .none .TovarParent .gapPar {
+    height: -moz-max-content;
+    height: max-content;
+    padding: 10px 0px;
+  }
+  .main .container .none .TovarParent .gapPar .gapMain {
+    gap: 8px;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .main .container .none .TovarParent .gapPar .gapMain h1 {
+    font-size: 20px;
+  }
+  .main .container .none .TovarParent .gapPar .gapMain span {
+    font-size: 12px;
+  }
+  .main .container .none .TovarParent .gapPar .gapMain h2 {
+    font-size: 14px;
+  }
+  .main .container .none .TovarParent .gapPar .gapMain ul li {
+    font-size: 12px;
+  }
+  .main .container .footer {
+    box-shadow: 0px -25px 59px 1px rgba(0, 0, 0, 0.2);
+  }
+  .main .container .footer .footMain {
+    height: -moz-max-content;
+    height: max-content;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  .main .container .footer .footMain .market .fotgap {
+    gap: 8px;
+  }
+  .main .container .footer .footMain .market .fotgap span {
+    font-size: 12px;
+  }
+  .main .container .footer .footMain .market .fotgap span svg {
+    width: 14px;
+    height: 14px;
+  }
+  .main .container .footer .footMain .market .aswqa {
+    width: 100px;
+    height: 60px;
+  }
+  .main .container .footer .footMain .info h1 {
+    font-size: 15px;
+  }
+  .main .container .footer .footMain .info article span {
+    font-size: 12px;
+    line-height: normal;
+  }
+  .main .container .footer .footMain .info img {
+    width: 120px;
+    height: 50px;
+  }
+  .main .container .footer .footMain .kontak {
+    display: none;
+  }
+  .main .container .footer .foroxiri {
+    height: -moz-max-content;
+    height: max-content;
+    margin-top: 0;
+  }
+  .main .container .footer .foroxiri .foxitMain span {
+    font-size: 9px;
+  }
+  .main .container .footer .foroxiri .foxitMain p {
+    gap: 10px;
+  }
+  .main .container .footer .foroxiri .foxitMain .katras {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  .main .container .Parent .Navbar {
+    justify-content: space-between;
+    height: 130px;
+  }
+  .main .container .Parent .Navbar .navCChild .navOne .location {
+    display: none;
+  }
+  .main .container .Parent .Navbar .navCChild .navOne ul li {
+    font-size: 13px;
+  }
+  .main .container .Parent .Navbar .navCChild .navOne .messenjers {
+    width: 70px;
+  }
+  .main .container .Parent .Navbar .navCChild .navOne .register {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(133, 133, 133);
+    border-radius: 50%;
+  }
+  .main .container .Parent .Navbar .navCChild .navOne .register svg {
+    display: block;
+  }
+  .main .container .Parent .Navbar .navCChild .navOne .register span {
+    display: none;
+  }
+  .main .container .Parent .Navbar .navChild {
+    height: 60px;
+  }
+  .main .container .Parent .Navbar .navChild .navTwo .search {
+    width: 50%;
+  }
+  .main .container .Parent .Navbar .navChild .navTwo .ikons {
+    display: none;
+  }
+  .main .container .Parent .Navbar .navCHTwo {
+    height: 30px;
+  }
+  .main .container .Parent .Navbar .navCHTwo .navTree .zirit {
+    display: none;
+  }
+  .main .container .Parent .Navbar .navCHTwo .navTree li {
+    font-size: 13px;
+  }
+  .main .container .Parent .cazuy {
+    height: 30px;
+  }
+  .main .container .Parent .cazuy .navTree .zirit {
+    display: none;
+  }
+  .main .container .Parent .cazuy .navTree li {
+    font-size: 13px;
+  }
+  .main .container .Parent .cazuy .screll {
+    width: 30px;
+    height: 15px;
+    bottom: -15px;
+  }
+  .main .container .none .Parent .Child {
+    height: 200px;
+  }
+  .main .container .none .Parent .Child .brinciSlide .swiper-pagination {
+    display: flex;
+    left: 35%;
+  }
+  .main .container .none .Parent .Child .brinciSlide .swiper-pagination span {
+    width: 3px;
+    height: 3px;
+    background-color: white;
+  }
+  .main .container .none .Parent .Child .ikinciSlide .swiper-pagination {
+    display: flex;
+    left: 25%;
+  }
+  .main .container .none .Parent .Child .ikinciSlide .swiper-pagination span {
+    width: 3px;
+    height: 3px;
+    background-color: white;
+  }
+  .main .container .none .Parent .PopularKat {
+    margin: 0;
+  }
+  .main .container .none .Parent .PopularKat .kat .bolim {
+    height: 120px;
+  }
+  .main .container .none .Parent .PopularKat .kat .bolim .imgg img {
+    width: 50px;
+    height: 50px;
+  }
+  .main .container .none .Parent .PopularKat .kat .bolim .gap p {
+    line-height: normal;
+  }
+  .main .container .none .Parent .PopularKat .kat .zirit {
+    display: none;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt {
+    padding-top: 12px;
+    gap: 8px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first {
+    height: 120px;
+    gap: 5px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first .ckeck .checj {
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first .ckeck span {
+    font-size: 13px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .first .imgSlide .slideImg {
+    width: 70%;
+    height: 80px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd {
+    gap: 0px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .vc {
+    font-size: 13px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .starsss .star {
+    font-size: 18px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .starsss .spaxn {
+    font-size: 10px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .starsss .spaxn span {
+    display: inline;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .korzina p span {
+    font-size: 18px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .korzina p del {
+    font-size: 13px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .korzina button {
+    width: 27px;
+    height: 27px;
+  }
+  .main .container .none .ParentWo .xitProdaj .xpProduct .prMain .producyt .secovfd .korzina button img {
+    width: 16px;
+    height: 16px;
+  }
+  .main .container .none .RecProd .RecMain .RecNav .katol button span {
+    font-size: 13px;
+  }
+  .main .container .none .RecProd .RecMain .RecNav .vse span {
+    display: none;
+  }
+  .main .container .none .RecProd .RecMain .RecNav .vse svg {
+    width: 11px;
+    height: 11px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud {
+    padding-top: 12px;
+    gap: 8px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first {
+    height: 120px;
+    gap: 5px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first .ckeck .checj {
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first .ckeck span {
+    font-size: 13px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .first .imgSlide .slideImg {
+    width: 70%;
+    height: 80px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd {
+    gap: 0px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .vc {
+    font-size: 13px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .starsss .star {
+    font-size: 18px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .starsss .spaxn {
+    font-size: 10px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .starsss .spaxn span {
+    display: inline;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .korzina p span {
+    font-size: 18px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .korzina p del {
+    font-size: 13px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .korzina button {
+    width: 27px;
+    height: 27px;
+  }
+  .main .container .none .RecProd .RecMain .RecPRMain .RecPRParent .Recprods .Recporud .secovfd .korzina button img {
+    width: 16px;
+    height: 16px;
+  }
+}/*# sourceMappingURL=style.css.map */

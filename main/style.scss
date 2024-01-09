@@ -1,0 +1,4063 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(229,229,229);
+}
+
+
+@mixin center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+$animationSpeed: 20s;
+.fixed {
+    transition: .5s;
+    transition-duration: .4s;
+}
+.marCh{
+    margin-top: 180px;
+}
+.stractive{
+    z-index: 3;
+}
+.rotate{
+    transform: rotate(180deg);
+}
+.animate__animated.animate__fadeIn{
+    --animate-duration: 2.6s;
+}
+.main{
+    max-width: 1450px;
+    margin: auto;
+    padding: 0;
+    .container{
+        max-width: 1440px;
+        margin: auto;
+        padding: 0;
+        background-color: white;
+        .Parent{
+            width: 100%;
+            padding-bottom: 60px;
+            margin: auto;
+            // background: #F7F8F9;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
+        .ParentWo{
+            width: 100%;
+            height: 682px;
+            margin: auto;
+            background-color: #F7F8F9;
+            @include center();
+        }
+        .BrendParent{
+            width: 100%;
+            height: 300px;
+            margin: auto;
+            background-color: white;
+            @include center();
+        }
+        .RecProd{
+            width: 100%;
+            height: 630px;
+            margin: auto;
+            @include center();
+            background-color: #F7F8F9;
+        }
+        .TovarParent{
+            width: 100%;
+            margin: auto;
+            background-color: #F7F8F9;
+        }
+        .footer{
+            width: 100%;
+            padding-top: 40px;
+            background-color: white;
+            @include center();
+        }
+    }
+}
+
+.btnaCDS{
+    color: rgb(0, 0, 0);
+    background-color: #3697E2;
+}
+.main .container{
+    .Parent{
+        .Navbar{
+            // position: fixed;   
+            width: 100%;
+            height: 180px;
+            @include center();
+            flex-direction: column;
+            box-shadow: 0px 10px 103px -4px rgba(0, 0, 0, 0.2);
+            z-index: 99;
+            background-color: white;
+            .loaderr{
+                width: 0;
+                height: 2px;
+                background-color: #3697E2;
+                transition: 2.3s;
+            }
+            .navCChild{
+                width: 100%;
+                height: 40px;
+                background: #F7F8F9;
+                @include center();
+                .navOne{            
+                    width: 1175px;
+                    height: 100%;
+                    z-index: 999;
+                    @include center();
+                    justify-content: space-between;
+                    .location{
+                        width: 77px;
+                        height: 24px;
+                        @include center();
+                        justify-content: space-between;
+                        cursor: pointer;
+                        span{
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 18px;
+                        }
+                    }
+                    ul{
+                        width: 440px;
+                        height: 24px;
+                        @include center();
+                        justify-content: space-between;
+                        list-style: none;
+                        li{
+                            cursor: pointer;
+                            @include center();
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 18px;
+                            transition-duration: .6s;
+                            &:hover{
+                                color: #3697E2;
+                                transition: .6s;
+                            }
+                        }
+                        .akkk{
+                            padding: 0 5px;
+                            border-radius: 5px;
+                            background: var(--eeee-36, linear-gradient(0deg, #F1DA09 0%, #F1DA09 100%), linear-gradient(0deg, #EEEE36 0%, #EEEE36 100%), #0867D6);
+                        }
+                    }
+                    .messenjers{
+                        width: 220px;
+                        height: 24px;
+                        @include center();
+                        justify-content: space-between;
+                        span{
+                            font-size: 16px;
+                            font-weight: 700;
+                            line-height: 22px;
+                        }
+                        svg{
+                            cursor: pointer;
+                        }
+                    }
+                    .gmail{
+                        width: 155px;
+                        height: 24px;
+                        @include center();
+                        justify-content: space-between;
+                        cursor: pointer;
+                        span{
+                   font-size: 16px;
+                   line-height: 22px;
+                        }
+                    }
+                    .register{
+                        width: 150px;
+                        height: 20px;
+                        @include center();
+                        justify-content: space-between;
+                        span{
+                   color: #15191C;
+                   font-size: 14px;
+                   line-height: 18px;
+                   cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .navChild{
+                width: 100%;
+                height: 90px;
+                background-color: white;
+                @include center();
+                .navTwo{
+                    width: 1175px;
+                    height: 100%;
+                    @include center();
+                    justify-content: space-between;
+                    .logo{
+                        cursor: pointer;
+                    }
+                    .search{    
+                        width: 732px;
+                        height: 48px;
+                        cursor: pointer;
+                        border-radius: 5px;
+                        border: 1px solid var(--d-7-d-9-dc, #D7D9DC);
+                        background: var(--f-7-f-8-fb, #F7F8FB);
+                        @include center();
+                        justify-content: space-between;
+                        label{ 
+                   width: 97%;
+                   cursor: pointer;
+                   @include center();
+                   gap: 15px;
+                   color: var(--747883, #747883);
+                   font-family: PT Root UI;
+                   font-size: 16px;
+                   font-style: normal;
+                   font-weight: 400;
+                   line-height: 22px;
+                   input{
+                       background-color: transparent;  
+                       border: 0;
+                       outline: none;
+                       width: 77%;
+                       &::placeholder{
+                           color: var(--3697-e-2, #0867D6);
+                           font-family: PT Root UI;
+                           font-size: 16px;
+                           font-style: normal;
+                           font-weight: 400;
+                           line-height: 22px;
+                       }
+                   }
+                        }
+                        img{
+                   height: 20px;
+                        }
+                    }
+                    .ikons{
+               width: 225px;
+               height: 36px;
+               @include center();
+               justify-content: space-between;
+               svg{
+                   cursor: pointer;
+               }
+                    }
+                }
+            }
+            .navCHTwo{
+                width: 100%;
+                height: 50px;
+                @include center();
+                border-top: 1px solid #E0E1E3;
+                background-color: white;
+                position: relative;
+                .navTree{
+                    width: 1175px;
+                    height: 100%;
+                    @include center();
+                    justify-content: space-between;
+                    list-style: none;
+                    li{
+                        @include center();
+                        color: var(--15191-c, #15191C);
+                        font-family: PT Root UI;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 24px;
+                        cursor: pointer;
+                        position: relative;
+                        transition-duration: 1.5s;
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 2px;
+                            background-color: #3697E2;
+                            transform: scaleX(0);
+                            transform-origin: left;
+                            transition: all 1.5s;
+                        }
+                        &:hover{
+                            color: #3697E2;
+                            transition: all 1.5s;
+                        }
+                        &:hover::after{
+                            transform: scaleX(1);
+                        }  
+                    }
+                    span{
+                        @include center();
+                        color: var(--15191-c, #15191C);
+                        font-family: PT Root UI;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 24px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .cazuy{
+            width: 100%;
+            height: 50px;
+            @include center();
+            border-top: 1px solid #E0E1E3;
+            backdrop-filter: blur(11px);
+            -webkit-backdrop-filter: blur(11px);
+            position: absolute;
+            transition: 1.3s;
+            transition-duration: .1s;
+            opacity: 0;
+            box-shadow: 0px 14px 20px -2px rgba(0, 0, 0, 0.2);
+            z-index: 99;
+            .navTree{
+                width: 1175px;
+                height: 100%;
+                @include center();
+                justify-content: space-between;
+                list-style: none;
+                li{
+                    @include center();
+                    color: var(--15191-c, #15191C);
+                    font-family: PT Root UI;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 24px;
+                    cursor: pointer;
+                    position: relative;
+                    transition-duration: 1.5s;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 2px;
+                        background-color: #3697E2;
+                        transform: scaleX(0);
+                        transform-origin: left;
+                        transition: all 1.5s;
+                    }
+                    &:hover{
+                        color: #3697E2;
+                        transition: all 1.5s;
+                    }
+                    &:hover::after{
+                        transform: scaleX(1);
+                    }  
+                }
+                span{
+                    @include center();
+                    color: var(--15191-c, #15191C);
+                    font-family: PT Root UI;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 24px;
+                    cursor: pointer;
+                }
+            }
+            .screll{
+                cursor: pointer;
+                position: absolute;
+                width: 60px;
+                height: 30px;
+                border-radius: 0 0 60px 60px ;
+                border: 0;
+                bottom: -30px;
+                left: 0;
+                background-color: white;
+                transition: .8s;
+                opacity: 1;
+                box-shadow: 0px 14px 20px -2px rgba(0, 0, 0, 0.2);
+
+            }
+        }
+    }
+    .none{ 
+        // display: none;
+        display: flex;
+        flex-direction: column;    
+        .Parent{
+            .Child{
+                width: 1175px;
+                height: 415px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .brinciSlide{
+                    width: 876px;
+                    height: 100%;
+                    @include center();
+                    position: relative;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    flex-shrink: 0;
+                    transition: 3s;
+                    .slider{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10px;
+                        display: flex;
+                        transition: 3s;
+                        .slide{
+                            width: 100%;
+                            height: 100%;
+                            cursor: grab;
+                            transition: 3s;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 10px;
+                            }
+                            &:active{
+                                cursor: grabbing;
+                            }
+                        }
+                    }
+                    .swiper-buttonn-prev{
+                        position: absolute;
+                        z-index: 99;
+                        left: -20px;
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        border: 0;
+                        cursor: pointer;
+                        @include center();
+                        box-shadow: 0px 0px 11px 10px rgba(255, 255, 255, 0.7);
+                        span{
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            @include center();
+                            font-size: 24px;
+                        }
+                    }
+                    .swiper-buttonn-next{
+                        position: absolute;
+                        z-index: 99;
+                        right: -20px;
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        border: 0;
+                        cursor: pointer;
+                        @include center();
+                        box-shadow: 0px 0px 11px 10px rgba(255, 255, 255, 0.7);
+                        span{
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            @include center();
+                            font-size: 24px;
+                        }
+                    }
+                    .swiper-pagination{
+                        width: max-content;
+                        // padding: 10px 25px;
+                        border-radius: 5px;
+                        background: rgba(255, 255, 255, 0.30);
+                        position: absolute;
+                        left: 43%;
+                        padding: 8px 6px;
+                    }
+                }
+                .ikinciSlide{
+                    width: 279px;
+                    height: 100%;
+                    overflow: hidden;
+                    position: relative;
+                    @include center();
+                    border-radius: 10px;
+                    .slider2{
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        transition: 3s;
+                        border-radius: 10px;    
+                        .slideef{
+                            width: 100%;
+                            height: 100%;
+                            cursor: grab;
+                            img{
+                                // width: 100%;
+                                height: 100%;
+                                border-radius: 10px;
+
+                            }
+                            &:active{
+                                cursor: grabbing;
+                            }
+                        }
+                    }
+                    .slide-preview{
+                        position: absolute;
+                        z-index: 99;
+                        left: -20px;
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        border: 0;
+                        cursor: pointer;
+                        @include center();
+                        box-shadow: 0px 0px 11px 10px rgba(255, 255, 255, 0.7);
+                        span{
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            @include center();
+                            font-size: 24px;
+                        }
+                    }
+                    .slide-next{
+                        position: absolute;
+                        z-index: 99;
+                        right: -20px;
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        border: 0;
+                        cursor: pointer;
+                        @include center();
+                        box-shadow: 0px 0px 11px 10px rgba(255, 255, 255, 0.7);
+                        span{
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            @include center();
+                            font-size: 24px;
+                        }
+                    }
+                    .swiper-pagination{
+                        position: absolute;
+                        z-index: 99;
+                        // padding: 10px 15px;
+                        border-radius: 5px;
+                        background: rgba(255, 255, 255, 0.30);
+                        // width: 50%;
+                        width: max-content;
+                        padding: 5px 3px;
+                        left: 35%;  
+                    }
+                }
+            }
+            .PopularKat{
+                width: 1175px;
+                gap: 20px;
+                margin-top: 25px;
+                @include center();
+                flex-direction: column;
+                justify-content: space-between;
+                .popNav{
+                width: 100%;
+                height: 46px;
+                @include center();
+                justify-content: space-between;
+                h1{
+                    color: var(--15191-c, #15191C);
+                    font-family: Circe;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 46px; /* 143.75% */
+                }
+                span{
+                    cursor: pointer;
+                    width: 150px;
+                    @include center();
+                    justify-content: space-around;
+                    color: var(--15191-c, #15191C);
+                    font-family: PT Root UI;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 22px; /* 137.5% */
+                }
+                }
+                .kat{
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(5, minmax(150px, 235px));
+                    .bolim{
+                    background: var(--ffffff, #FFF);
+                    height: 207px;
+                    border: 1px solid var(--e-0-e-1-e-3, #E0E1E3);
+                    @include center();
+                    flex-direction: column;
+                    gap: 20px;
+                    cursor: pointer;
+                    transition-duration: 1.6s;
+                    .imgg{
+                        @include center();
+                        height: 50%;
+                    }
+                    .gap{
+                        width: 60%;
+                        @include center();
+                        flex-direction: column;
+                        p{
+                            text-align: center;
+                            font-family: PT Root UI;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 24px; /* 133.333% */
+                            transition-duration: .6s;
+                        }
+                        span{
+                            color: var(--747883, #747883);
+                            text-align: center;
+                            font-family: PT Root UI;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 18px; /* 128.571% */
+                        }
+                    }
+                    &:hover{
+                        transform: scale(1);
+                        transition: 1.6s;
+                        box-shadow: 0px 0px 73px 13px rgba(0, 0, 0, 0.2);
+                        .gap{
+                            p{
+                                color: #3697E2;
+                                transition: .6s;
+                            }
+                        }
+                    }
+                    }
+                }
+            }
+        }
+        .ParentWo{
+            .xitProdaj{
+                width: 1175px;
+                height: 500px;
+                @include center();
+                flex-direction: column;
+                // background-color: red;
+                justify-content: space-between;
+                .xpNav{
+                    width: 100%;
+                    height: 46px;
+                    @include center();
+                    justify-content: space-between;
+                    h1{
+                        color: var(--15191-c, #15191C);
+                        font-family: Circe;
+                        font-size: 32px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 46px; /* 143.75% */
+                    }
+                    article{
+                        width: 200px;
+                        height: 100%;
+                        @include center();
+                        gap: 15px;
+                    }
+                }
+                .xpProduct{
+                    width: 100%;
+                    height: 90%;
+                    .prMain{
+                        width: 278px;
+                        height: 90%;
+                        display: flex;
+                        align-items: center;
+                        .producyt{
+                            width: 278px;
+                            height: 372px;
+                            cursor: pointer;
+                            padding-top: 10px;
+                            background-color: white;    
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            border-radius: 5px;
+                            transition-duration: 2.2s;
+                            .first{
+                                width: 100%;
+                                height: 60%;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                gap: 25px;
+                                .ckeck{ 
+                                    width: 100%;
+                                    height: 10%;
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 5px;
+                                    .checj{
+                                        width: 16px;
+                                        height: 16px;
+                                        border-radius: 50%;
+                                        background-color: #46AC44;
+                                        @include center();
+                                        margin-left: 10px;
+                                    }
+                                    span{
+                                        color: var(--3-a-3-f-43, #3A3F43);
+                                        font-family: PT Root UI;
+                                        font-size: 14px;
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        line-height: 18px; /* 128.571% */
+                                    }
+                                }
+                                .imgSlide{
+                                    width: 100%;
+                                    height: 150px;
+                                    @include center();
+                                    position: relative;
+                                    .slideImg{
+                                        width: 200px;
+                                        height: 145px;
+                                        .dspan{
+                                            width: 100%;
+                                            height: 100%;
+                                            img{
+                                                width: 200px;
+                                                max-height: 145px;
+                                                &:active{
+                                                    cursor: grabbing;
+                                                }
+                                            }
+                                        }
+                                        .swiper-scrollbar{
+                                            width: 100%;
+                                            height: 1px;
+                                            bottom: 0px;
+                                        }
+                                    }
+                                    .slideIkon{ 
+                                        position: absolute;
+                                        top: 0;
+                                        right: 5px;
+                                        p{
+                                            opacity: 0;
+                                            transition-duration: 6s;
+                                            cursor: pointer;
+                                        }
+
+                                    }
+                                }
+                            }
+                            .secovfd{
+                                width: 90%;
+                                height: 40%;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 10px;
+                                .vc{
+                                color: var(--15191-c, #15191C);
+                                font-size: 17px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 22px; /* 137.5% */
+                                }
+                                .starsss{
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 3px;
+                                    .spaxn{
+                                        margin-left: 7px;
+                                        span{
+                                            color: var(--9-a-9-c-9-e, #9A9C9E);
+                                            font-family: PT Root UI;
+                                            font-size: 14px;
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            line-height: 18px;
+                                        }
+                                    }
+                                    .star{
+                                        color: #ccc;
+                                        font-size: 24px;
+                                    }
+                                    .star:hover,
+                                    .star.active {
+                                      color: #ffcc00;
+                                    }
+                                }
+                                .korzina{
+                                width: 100%;
+                                @include center();
+                                justify-content: space-between;
+                                p{
+                                    width: 70%;
+                                    gap: 10px;
+                                    span{
+                                        color: var(--15191-c, #15191C);
+                                        font-family: Circe;
+                                        font-size: 24px;
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        line-height: 28px; /* 116.667% */
+                                    }
+                                    del{
+                                        color: var(--9-a-9-c-9-e, #9A9C9E);
+                                        font-family: PT Root UI;
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        line-height: 22px; /* 137.5% */
+                                        text-decoration-line: strikethrough;
+                                    }
+                                }
+                                button{
+                                    width: 40px;
+                                    height: 40px;
+                                    border-radius: 5px;
+                                    border: 0;
+                                    cursor: pointer;
+                                    @include center();
+                                    transition-duration: 1.5s;
+                                    background: var(--3697-e-2, linear-gradient(0deg, #208EE2 0%, #208EE2 100%), linear-gradient(0deg, #0696E7 0%, #0696E7 100%), #0867D6);
+                                    &:hover{
+                                        transform: scale(1.1);
+                                        transition: 1.5s;
+                                        // -webkit-box-reflect: below
+                                        // 1px linear-gradient(transparent, #0005);
+                                        // box-shadow: 0 0 5px #03e9f4, 0 0 15px #03e9f4,
+                                        //         0 0 25px #03e9f4, 0 0 100px #03e9f4;
+                                    }
+                                }   
+                                }
+                            }
+                            &:hover{
+                                transform: scale(1);
+                                transition: 2s;
+                                .first{
+                                    .imgSlide{
+                                        .slideIkon{
+                                            p{
+                                                transition: 1.5s;
+                                                opacity: 1;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+        .BrendParent{
+            .brMain{
+                width: 1175px;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .brNav{
+                    width: 100%;
+                    height: 46px;
+                    @include center();
+                    justify-content: space-between;
+                    h1{
+                        color: var(--15191-c, #15191C);
+                        font-family: Circe;
+                        font-size: 32px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 46px; /* 143.75% */
+                    }
+                    span{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        color: var(--1-e-1-f-21, #1E1F21);
+                        font-family: PT Root UI;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 22px; /* 137.5% */
+                        cursor: pointer;
+                    }
+                }
+                .brProd{
+                    width: 100%;
+                    height: 75%;
+                    @include center();
+                    position: relative;
+                    overflow: hidden;
+                    &::before,
+                    &::after {
+                        @include white-gradient;
+                        content: "";
+                        height: 100%;
+                        position: absolute;
+                        width: 170px;
+                        z-index: 2;
+                    }
+                    &::after {
+                        right: 0;
+                        top: 0;
+                        transform: rotateZ(180deg);
+                    }
+                    &::before {
+                        left: 0;
+                        top: 0;
+                    }
+                    .beSlide{
+                        width: calc(180 * 9);
+                        height: 99%;
+                        display: flex;
+                        align-items: center;
+                        display: flex;
+                        animation: scroll $animationSpeed linear infinite;
+                        display: flex;
+                        gap: 150px;
+                        .slide{
+                            width: 180px;
+                            height: 100px;
+                            background-color: white;
+                            @include center();
+                            border-radius: 10px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        .RecProd{
+            .RecMain{
+                width: 1175px;
+                height: 80%;
+                display: flex;
+                flex-direction: column;
+                .RecNav{
+                    width: 100%;
+                    height: 50px;
+                    @include center();
+                    justify-content: space-between;
+                    .katol{
+                        height: 100%;
+                        @include center();
+                        gap: 30px;
+                        button{
+                            height: 80%;
+                            border: 0;
+                            background-color: transparent;
+                            span{
+                                width: 100%;
+                                height: 100%;
+                                @include center();
+                                color:  #9A9C9E;
+                                font-family: Circe;
+                                font-size: 24px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 28px; /* 116.667% */
+                                position: relative;
+                                transition-duration: 1.5s;
+                                cursor: pointer;
+                                &::before{
+                                    content: '';
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 2px;
+                                    background-color: #3697E2;
+                                    transform: scaleX(0);
+                                    transform-origin: left;
+                                    transition: all 1.5s;
+                                }
+                                &::after{
+                                    content: '';
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 2px;
+                                    background-color: #3697E2;
+                                    transform: scaleX(0);
+                                    transform-origin: right;
+                                    transition: all 1.5s;
+                                }
+                                &:hover{
+                                    color: #3697E2;
+                                    transition: all 1.5s;
+                                }
+                                &:hover::before{
+                                    transform: scaleX(1);
+                                }
+                                &:hover::after{
+                                    transform: scaleX(1);
+                                }      
+                            }
+                        }
+                    }
+                    .vse{
+                        height: 100%;
+                        cursor: pointer;
+                        @include center();
+                        gap: 15px;
+                        color: var(--15191-c, #15191C);
+                        font-family: PT Root UI;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 22px; /* 137.5% */
+                        svg{
+                            background-color: #3697E2;
+                            //padding: 10px;
+                            height: 20px;
+                            width: 20px;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+                .RecPRMain{
+                    width: 100%;
+                    height: 90%;
+                    @include center();
+                    transition: .2s;
+                    .RecPRParent{
+                        width: 100%;
+                        height: 100%;
+                        .Recprods{
+                            width: 278px;
+                            height: 90%;
+                            display: flex;
+                            align-items: center;
+                            .Recporud{
+                                width: 278px;
+                                height: 372px;
+                                padding-top: 10px;
+                                background-color: white;    
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                border-radius: 5px;
+                                transition-duration: 2.2s;
+                                cursor: pointer;
+                                .first{
+                                    width: 100%;
+                                    height: 60%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    gap: 25px;
+                                    .ckeck{ 
+                                        width: 100%;
+                                        height: 10%;
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 5px;
+                                        .checj{
+                                            width: 16px;
+                                            height: 16px;
+                                            border-radius: 50%;
+                                            background-color: #46AC44;
+                                            @include center();
+                                            margin-left: 10px;
+                                        }
+                                        span{
+                                            color: var(--3-a-3-f-43, #3A3F43);
+                                            font-family: PT Root UI;
+                                            font-size: 14px;
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            line-height: 18px; /* 128.571% */
+                                        }
+                                    }
+                                    .imgSlide{
+                                        width: 100%;
+                                        height: 150px;
+                                        @include center();
+                                        position: relative;
+                                        .slideImg{
+                                            width: 200px;
+                                            height: 145px;
+                                            .dspan{
+                                                width: 100%;
+                                                height: 100%;
+                                                img{
+                                                    width: 200px;
+                                                    max-height: 145px;
+                                                    &:active{
+                                                        cursor: grabbing;
+                                                    }
+                                                }
+                                            }
+                                            .swiper-scrollbar{
+                                                width: 100%;
+                                                height: 1px;
+                                                bottom: 0px;
+                                            }
+                                        }
+                                        .slideIkon{ 
+                                            position: absolute;
+                                            top: 0;
+                                            right: 5px;
+                                            p{
+                                                opacity: 0;
+                                                transition-duration: 6s;
+                                                cursor: pointer;
+                                            }
+                                            .like{
+                                                svg{
+                                                    background-color: red;
+                                                    color: red;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .secovfd{
+                                    width: 90%;
+                                    height: 40%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 10px;
+                                    .vc{
+                                        color: var(--15191-c, #15191C);
+                                        font-size: 17px;
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        line-height: 22px; /* 137.5% */
+                                    }
+                                    .starsss{
+                                        width: 100%;
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 3px;
+                                        .star{
+                                            color: #ccc;
+                                            font-size: 24px;
+                                        }
+                                        .star:hover,
+                                        .star.active {
+                                          color: #ffcc00;
+                                        }
+                                        .spaxn{
+                                            margin-left: 7px;
+                                            span{
+                                                color: var(--9-a-9-c-9-e, #9A9C9E);
+                                                font-family: PT Root UI;
+                                                font-size: 14px;
+                                                font-style: normal;
+                                                font-weight: 500;
+                                                line-height: 18px;
+                                            }
+                                        }
+                                        
+                                    }
+                                    .korzina{
+                                        width: 100%;
+                                        @include center();
+                                        justify-content: space-between;
+                                        p{
+                                            width: 70%;
+                                            gap: 10px;
+                                            span{
+                                                color: var(--15191-c, #15191C);
+                                                font-family: Circe;
+                                                font-size: 24px;
+                                                font-style: normal;
+                                                font-weight: 700;
+                                                line-height: 28px; /* 116.667% */
+                                            }
+                                            del{
+                                                color: var(--9-a-9-c-9-e, #9A9C9E);
+                                                font-family: PT Root UI;
+                                                font-size: 16px;
+                                                font-style: normal;
+                                                font-weight: 500;
+                                                line-height: 22px; /* 137.5% */
+                                                text-decoration-line: strikethrough;
+                                            }
+                                        }
+                                        button{
+                                            width: 40px;
+                                            height: 40px;
+                                            border-radius: 5px;
+                                            border: 0;
+                                            cursor: pointer;
+                                            @include center();
+                                            transition-duration: 1.5s;
+                                            background: var(--3697-e-2, linear-gradient(0deg, #208EE2 0%, #208EE2 100%), linear-gradient(0deg, #0696E7 0%, #0696E7 100%), #0867D6);
+                                            &:hover{
+                                                transform: scale(1.1);
+                                                transition: 1.5s;
+                                                // -webkit-box-reflect: below
+                                                // 1px linear-gradient(transparent, #0005);
+                                                // box-shadow: 0 0 5px #03e9f4, 0 0 15px #03e9f4,
+                                                //         0 0 25px #03e9f4, 0 0 100px #03e9f4;
+                                            }
+                                        }   
+                                    }
+                                }
+                                &:hover{
+                                    transform: scale(1);
+                                    transition: 2s;
+                                    .first{
+                                        .imgSlide{
+                                            .slideIkon{
+                                                p{
+                                                    transition: 1.5s;
+                                                    opacity: 1;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .TovarParent{
+            .dostavka{
+                width: 100%;
+                height: 218px;
+                @include center();
+                background-color: white;
+                .dosMain{
+                    width: 1175px;
+                    height: 98px;
+                    @include center();
+                    justify-content: space-between;
+                    .dosPr{
+                        width: 270px;
+                        height: 98px;
+                        border-radius: 5px;
+                        background: var(--f-2-f-5-f-9, #F2F5F9);
+                        @include center();
+                        justify-content: space-around;
+                        cursor: pointer;
+                        transition-duration: 2.2s;
+                        span{
+                            color: var(--3-a-3-f-43, #3A3F43);
+                            font-family: PT Root UI;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 24px; /* 133.333% */
+                        }
+                        &:hover{
+                            transform: scale(1);
+                            transition: 2.2s;
+                            box-shadow: 0px 0px 73px 14px rgba(0, 0, 0, 0.2);
+                        }
+                    }
+                }
+            }
+            .nawTovari{
+                width: 100%;
+                padding-top: 50px;
+                @include center();
+                .tovarMain{
+                    width: 1175px;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    .tovNav{
+                        width: 100%;
+                        height: 46px;
+                        h1{
+                            color: var(--15191-c, #15191C);
+                            font-family: Circe;
+                            font-size: 32px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 46px;
+                        }
+                    }
+                    .tovProd{
+                        width: 100%;
+                        display: grid;
+                        grid-template-columns: repeat(3, minmax(150px,376px));
+                        gap: 20px;
+                        padding: 40px 0px;  
+                        .tprod{
+                            // width: 376px;
+                            height: 325px;
+                            background-color: white;
+                            display: flex;
+                            justify-content: space-evenly;
+                            padding: 30px 0px;
+                            border-radius: 5px;
+                            background: var(--ffffff, #FFF);
+                            transition-duration: 3s;
+                            cursor: pointer;
+                            transition: 3s;
+                            overflow: hidden;
+                            &:hover{
+                                box-shadow: 0px 0px 50px 15px rgba(0, 0, 0, 0.2);
+                                transform: scale(1);
+                                transition: 3s;
+                                // .imgBtn{  animation: strelka 1s infinite; -webkit-animation: strelka 1s infinite;  }
+                            }
+                            .timg{
+                                padding: 11px;
+                                border-radius: 10px;
+                                background: rgba(241, 218, 9, 0.50);
+                                height: 70px;
+                            }
+                            .tgap{
+                                width: 236px;
+                                h1{
+                                    color: var(--15191-c, #15191C);
+                                    font-family: PT Root UI;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 24px; /* 133.333% */
+                                }
+                                .otaa{
+                                    cursor: auto;
+                                    overflow: hidden;
+                                    .kopgap{
+                                        // width: 80%;
+                                        // height: 80%;
+                                        padding: 10px 5px;
+                                        // background-color: #3697E2;
+                                        display: flex;
+                                        justify-content: space-evenly;
+                                        flex-direction: column;
+                                        gap: 6px;
+                                        transition: 3s;
+                                        transition-duration: 3s;
+                                        // transform: translateY(-220px);
+                                        span{
+                                            color: var(--3-a-3-f-43, #3A3F43);
+                                            font-family: PT Root UI;
+                                            font-size: 16px;
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            line-height: 22px; /* 137.5% */
+                                            cursor: pointer;
+                                            a{
+                                                color: var(--9-a-9-c-9-e, #9A9C9E);
+                                                font-family: PT Root UI;
+                                                font-size: 12px;
+                                                font-style: normal;
+                                                font-weight: 500;
+                                                line-height: 16px; /* 133.333% */
+                                            }
+                                        }
+                                    }
+                                }
+                                button{
+                                    width: 130px;
+                                    height: 32px;
+                                    border-radius: 5px;
+                                    border: 1px solid var(--e-0-e-1-e-3, #E0E1E3);
+                                    gap: 5px;
+                                    @include center();
+                                    color: #3697E2;
+                                    background-color: transparent;
+                                    cursor: pointer;
+                                    margin-top: 15px;
+                                    transition: 3s;
+                                    transition-duration: 3s;
+                                    img{
+                                        height: 17px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .gapPar{
+                width: 100%;
+                height: 380px;
+                margin-top: 30px;
+                background-color: white;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+                .gapMain{
+                    width: 1175px;
+                    height: 350px;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 40px;
+                    gap: 20px;
+                    h1{    
+                        font-size: 32px; 
+                        font-weight: 700;
+                        line-height: 46px; /* 143.75% */
+                    }
+                    span{
+                        color: var(--15191-c, #15191C);
+                        font-family: PT Root UI;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 22px; /* 137.5% */
+                    }
+                    h2{
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 24px; /* 133.333% */
+                    }
+                    ul{
+                        padding-left: 15px;
+                        li{
+                            color: var(--3-a-3-f-43, #3A3F43);
+                            font-family: PT Root UI;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 22px; /* 137.5% */
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .onas{
+        display: none;
+        // display: flex;
+        width: 100%;
+        background-color: white;
+        justify-content: center;
+        .onasParent{
+            width: 1175px;
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            h1{
+                color: var(--15191-c, #15191C);
+                font-family: Circe;
+                font-size: 32px;
+            }
+            .brincu{
+                width: 100%;
+                height: 475px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .briRasm{
+                    width: 100%;
+                    height: 400px;
+                    background-color: #F7F8FB;
+                    @include center();
+                    justify-content: space-between;
+                    .gapa{
+                        width: 625px;
+                        height: 276px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        padding-right: 50px;
+                        gap: 24px;
+                        p{
+                            color: var(--15191-c, #15191C);
+                            font-family: Circe;
+                            font-size: 24px;
+                            font-weight: 700;
+                            line-height: 28px;
+                        }
+                        span{
+                            color: var(--15191-c, #15191C);
+                            font-family: PT Root UI;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 28px;
+                        }
+                    }
+                    .leftpad{
+                        padding-left: 35px;
+                        padding-right: 0px;
+                    }
+                }
+            }
+            .ikincu{
+                width: 100%;
+                height: 390px;
+                .ikiGaplaPar{
+                    width: 100%;
+                    padding-top: 25px;
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+                    .ikiGapla{
+                        width: 270px;
+                        height: 312px;
+                        .kiGap{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 20px;
+                            .kiImg{
+                                width: 100%;
+                            }
+                            .gpaaa{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 10px;
+                                p{
+                                    color: var(--15191-c, #15191C);
+                                    font-family: PT Root UI;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 24px;
+                                }
+                                span{
+                                    color: var(--3-a-3-f-43, #3A3F43);
+                                    font-family: PT Root UI;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 22px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .brMain{
+                width: 100%;
+                height: 230px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                h1{
+                    padding-bottom: 25px;
+                }
+                .brProd{
+                    width: 100%;
+                    height: 75%;
+                    @include center();
+                    position: relative;
+                    overflow: hidden;
+                    &::before,
+                    &::after {
+                        @include white-gradient;
+                        content: "";
+                        height: 100%;
+                        position: absolute;
+                        width: 170px;
+                        z-index: 2;
+                    }
+                    &::after {
+                        right: 0;
+                        top: 0;
+                        transform: rotateZ(180deg);
+                    }
+                    &::before {
+                        left: 0;
+                        top: 0;
+                    }
+                    .beSlide{
+                        width: calc(180 * 9);
+                        height: 99%;
+                        display: flex;
+                        align-items: center;
+                        display: flex;
+                        animation: scroll $animationSpeed linear infinite;
+                        display: flex;
+                        gap: 150px;
+                        .slide{
+                            width: 180px;
+                            height: 100px;
+                            background-color: white;
+                            @include center();
+                            border-radius: 10px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .sertifikat{
+                margin-top: 30px;
+                width: 100%;
+                height: 375px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 30px;
+                .serPar{
+                    width: 100%;
+                    height: 300px;
+                    overflow: hidden;
+                    .serwrp{
+                        width: 278px;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        .wixx{
+                            width: 278px;
+                        }
+                    }
+                }
+            }
+            .sotrudniki{
+                width: 100%;
+                height: 460px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 30px;
+                .parsot{
+                    width: 100%;
+                    height: 380px;
+                    overflow: hidden;
+                    .sotOt{
+                        width: 279px;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        border-radius: 5px;
+                        .sotprod{
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 5px;
+                            border: 1px solid var(--d-7-d-9-dc, #D7D9DC);
+                            background: var(--ffffff, #FFF);
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                            
+                            .sotgap{
+                                width: 97%;
+                                height: 90px;
+                                display: flex;
+                                align-items: center;
+                                flex-direction: column;
+                                gap: 5px;
+                                p{
+                                    width: 85%;
+                                    color: var(--1-e-1-f-21, #1E1F21);
+                                    font-family: PT Root UI;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 24px;
+                                }
+                                span{
+                                    width: 85%;
+                                    color: var(--747883, #747883);
+                                    font-family: PT Root UI;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: 22px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .dostavka{
+        display: none;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        padding-bottom: 30px;
+        .dostavParent{
+            width: 1175px;
+            .firstDos{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                h1{
+                    color: var(--15191-c, #15191C);
+                    font-family: Circe;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 46px; /* 143.75% */
+                }
+                p{
+                    color: var(--15191-c, #15191C);
+                    font-family: PT Root UI;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px; /* 155.556% */
+                    margin-bottom: 20px;
+                }
+                .tabke{
+                    width: 100%;
+                    display: flex;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .map{
+                width: 100%;
+                margin-top: 60px;
+                display: flex;
+                .forma{
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+                    .forgap{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        h1{
+                            color: var(--15191-c, #15191C);
+                            font-family: Circe;
+                            font-size: 32px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 46px; /* 143.75% */
+                        }
+                        span{
+                            width: 285px;
+                            color: var(--3-a-3-f-43, #3A3F43);
+                            font-family: PT Root UI;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 18px; /* 128.571% */
+                        }
+                    }
+                    .forinpu{
+                        width: 100%;
+                        padding-bottom: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        align-items: flex-start;
+                        .name{
+                            width: 100%;
+                            height: 50px;
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+                            #ism{
+                                padding: 14px 120px 14px 20px;
+                                width: 228px;
+                                border-radius: 5px;
+                                border: 1px solid var(--d-7-d-9-dc, #D7D9DC);
+                                background: var(--f-7-f-8-fb, #F7F8FB);
+                                outline: none;
+                            }
+                            #nomer{
+                                padding: 14px 120px 14px 20px;
+                                width: 228px;
+                                border-radius: 5px;
+                                border: 1px solid var(--d-7-d-9-dc, #D7D9DC);
+                                background: var(--f-7-f-8-fb, #F7F8FB);
+                                outline: none;
+                            }
+                        }
+                        #email{
+                            width: 476px;
+                            padding: 14px 120px 14px 20px;
+                            border-radius: 5px;
+                            border: 1px solid var(--d-7-d-9-dc, #D7D9DC);
+                            background: var(--f-7-f-8-fb, #F7F8FB);
+                            outline: 0;
+                        }
+                        #vopros{
+                            width: 476px;
+                            height: 120px;
+                            padding: 14px 120px 14px 20px;
+                            border-radius: 5px;
+                            border: 1px solid var(--d-7-d-9-dc, #D7D9DC);
+                            background: var(--f-7-f-8-fb, #F7F8FB);
+                            outline: 0;
+                        }
+                        .zayav{
+                            width: 100%;
+                            height: 60px;
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+                            .zayavBtn{
+                                border-radius: 5px;
+                                background: var(--3697-e-2, linear-gradient(0deg, #208EE2 0%, #208EE2 100%), linear-gradient(0deg, #0696E7 0%, #0696E7 100%), #0867D6);
+                                border: 0;
+                                @include center();
+                                padding: 16px 30px;
+                                cursor: pointer;
+                                transition: .6s;
+                                transition-duration: .6s;
+                                p{
+                                    color: var(--ffffff, #FFF);
+                                    font-family: PT Root UI;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: 24px; /* 133.333% */
+                                }
+                                &:hover{
+                                    box-shadow: 0px 0px 51px 20px rgba(0, 210, 255, 0.28);
+                                }
+                            }
+                            span{
+                                width: 236px;
+                                color: var(--535-e-69, #535E69);
+                                font-family: PT Root UI;
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 16px; /* 133.333% */
+                            }
+                        }
+                    }
+                }
+                .karta{
+                    width: 50%;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    #map{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .oplata{
+        display: none;
+        // display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-color: white;
+        .oplatParent{
+            width: 1175px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            h1{
+                color: var(--15191-c, #15191C);
+                font-family: Circe;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 46px; /* 143.75% */
+            }
+            p{
+                color: var(--15191-c, #15191C);
+                font-family: PT Root UI;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px; /* 155.556% */
+            }
+            .oplgap{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            .oplakata{
+                width: 100%;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    transition: 2s;
+                    transition-duration: 2s;
+                }
+            }
+            .oplgap1{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            .oplvozvrat{
+                width: 100%;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                }
+            }
+            .map{
+                width: 100%;
+                margin-top: 60px;
+                display: flex;
+                .forma{
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+                    .forgap{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        h1{
+                            color: var(--15191-c, #15191C);
+                            font-family: Circe;
+                            font-size: 32px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 46px; /* 143.75% */
+                        }
+                        span{
+                            width: 285px;
+                            color: var(--3-a-3-f-43, #3A3F43);
+                            font-family: PT Root UI;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 18px; /* 128.571% */
+                        }
+                    }
+                    .forinpu{
+                        width: 100%;
+                        padding-bottom: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        align-items: flex-start;
+                        .name{
+                            width: 100%;
+                            height: 50px;
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+                            #ism{
+                                padding: 14px 120px 14px 20px;
+                                width: 228px;
+                                border-radius: 5px;
+                                border: 1px solid var(--d-7-d-9-dc, #D7D9DC);
+                                background: var(--f-7-f-8-fb, #F7F8FB);
+                                outline: none;
+                            }
+                            #nomer{
+                                padding: 14px 120px 14px 20px;
+                                width: 228px;
+                                border-radius: 5px;
+                                border: 1px solid var(--d-7-d-9-dc, #D7D9DC);
+                                background: var(--f-7-f-8-fb, #F7F8FB);
+                                outline: none;
+                            }
+                        }
+                        #email{
+                            width: 476px;
+                            padding: 14px 120px 14px 20px;
+                            border-radius: 5px;
+                            border: 1px solid var(--d-7-d-9-dc, #D7D9DC);
+                            background: var(--f-7-f-8-fb, #F7F8FB);
+                            outline: 0;
+                        }
+                        #vopros{
+                            width: 476px;
+                            height: 120px;
+                            padding: 14px 120px 14px 20px;
+                            border-radius: 5px;
+                            border: 1px solid var(--d-7-d-9-dc, #D7D9DC);
+                            background: var(--f-7-f-8-fb, #F7F8FB);
+                            outline: 0;
+                        }
+                        .zayav{
+                            width: 100%;
+                            height: 60px;
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+                            .zayavBtn{
+                                border-radius: 5px;
+                                background: var(--3697-e-2, linear-gradient(0deg, #208EE2 0%, #208EE2 100%), linear-gradient(0deg, #0696E7 0%, #0696E7 100%), #0867D6);
+                                border: 0;
+                                @include center();
+                                padding: 16px 30px;
+                                cursor: pointer;
+                                transition: .6s;
+                                transition-duration: .6s;
+                                p{
+                                    color: var(--ffffff, #FFF);
+                                    font-family: PT Root UI;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: 24px; /* 133.333% */
+                                }
+                                &:hover{
+                                    box-shadow: 0px 0px 51px 20px rgba(0, 210, 255, 0.28);
+                                }
+                            }
+                            span{
+                                width: 236px;
+                                color: var(--535-e-69, #535E69);
+                                font-family: PT Root UI;
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 16px; /* 133.333% */
+                            }
+                        }
+                    }
+                }
+                .karta{
+                    width: 50%;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    #map1{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .contacts{
+        width: 100%;
+        background-color: white;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .conePArent{
+            width: 1175px;
+            .sh1{
+                color: var(--15191-c, #15191C);
+                font-family: Circe;
+                font-size: 32px;
+                line-height: 46px;
+                margin-bottom: 20px;
+            }
+            .coneMAin{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                .gaxla{
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 25px;
+                    .ooobinikl{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                        .binone{
+                            display: flex;
+                            gap: 10px;
+                            span{
+                                p{
+                                    color: var(--15191-c, #15191C);
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: 22px; /* 137.5% */
+                                }
+                                span{
+                                    color: var(--3-a-3-f-43, #3A3F43);                                                        
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 22px; /* 137.5% */
+                                }
+                            }
+                        }
+                    }
+                    .zvonite{
+                        display: flex;
+                        width: 544px;
+                        padding: 25px 30px;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 20px;
+                        border-radius: 5px;
+                        background: var(--ffffff, #FFF);
+                        box-shadow: 0px 5px 30px 0px rgba(63, 66, 69, 0.15);
+                        .telefoni{
+                            display: flex;
+                            gap: 8px;
+                            .nonerr{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 5px;
+                                .mola{
+                                    display: flex;
+                                    gap: 20px;
+                                }
+                            }
+                        }
+                        .piwite{
+                            display: flex;
+                            gap: 8px;
+                            .aAAQ{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 5px;
+                                a{
+                                    color: var(--3697-e-2, #0867D6);
+                                    font-family: PT Root UI;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: 22px; /* 137.5% */
+                                    text-decoration-line: underline;
+                                }
+                            }
+                        }
+                    }
+                    .rekvizit{
+                        display: flex;
+                        article{
+                            width: 50%;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                            h1{
+                                font-size: 20px;
+                                line-height: 15px;
+                            }
+                            p{
+                                display: flex;
+                                gap: 10px;
+                                span{
+                                    color: var(--747883, #747883);
+                                    font-family: PT Root UI;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 22px; /* 137.5% */
+                                    b{
+                                        color: #15191C;
+                                        font-weight: 400;
+                                    }
+                                }
+                            }
+                        }
+                        .rIkons{
+                            p{
+                                img{
+                                    width: 40px;
+                                    height: 40px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .cForma{
+                    width: 50%;
+                    height: 100%;
+                    .forma{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        h1{
+                            color: var(--15191-c, #15191C);
+                            font-family: Circe;
+                            font-size: 32px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 46px; /* 143.75% */
+                        }
+                        .forinpu{
+                            width: 100%;
+                            padding-bottom: 20px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 20px;
+                            align-items: flex-start;
+                            .name{
+                                width: 100%;
+                                height: 50px;
+                                display: flex;
+                                align-items: center;
+                                gap: 20px;
+                                #ism{
+                                    padding: 14px 120px 14px 20px;
+                                    width: 228px;
+                                    border-radius: 5px;
+                                    border: 1px solid var(--d-7-d-9-dc, #D7D9DC);
+                                    background: var(--f-7-f-8-fb, #F7F8FB);
+                                    outline: none;
+                                }
+                                #nomer{
+                                    padding: 14px 120px 14px 20px;
+                                    width: 228px;
+                                    border-radius: 5px;
+                                    border: 1px solid var(--d-7-d-9-dc, #D7D9DC);
+                                    background: var(--f-7-f-8-fb, #F7F8FB);
+                                    outline: none;
+                                }
+                            }
+                            #email{
+                                width: 476px;
+                                padding: 14px 120px 14px 20px;
+                                border-radius: 5px;
+                                border: 1px solid var(--d-7-d-9-dc, #D7D9DC);
+                                background: var(--f-7-f-8-fb, #F7F8FB);
+                                outline: 0;
+                            }
+                            #vopros{
+                                width: 476px;
+                                height: 120px;
+                                padding: 14px 120px 14px 20px;
+                                border-radius: 5px;
+                                border: 1px solid var(--d-7-d-9-dc, #D7D9DC);
+                                background: var(--f-7-f-8-fb, #F7F8FB);
+                                outline: 0;
+                            }
+                            .zayav{
+                                width: 100%;
+                                height: 60px;
+                                display: flex;
+                                align-items: center;
+                                gap: 20px;
+                                .zayavBtn{
+                                    border-radius: 5px;
+                                    background: var(--3697-e-2, linear-gradient(0deg, #208EE2 0%, #208EE2 100%), linear-gradient(0deg, #0696E7 0%, #0696E7 100%), #0867D6);
+                                    border: 0;
+                                    @include center();
+                                    padding: 16px 30px;
+                                    cursor: pointer;
+                                    transition: .6s;
+                                    transition-duration: .6s;
+                                    p{
+                                        color: var(--ffffff, #FFF);
+                                        font-family: PT Root UI;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        line-height: 24px; /* 133.333% */
+                                    }
+                                    &:hover{
+                                        box-shadow: 0px 0px 51px 20px rgba(0, 210, 255, 0.28);
+                                    }
+                                }
+                                span{
+                                    width: 236px;
+                                    color: var(--535-e-69, #535E69);
+                                    font-family: PT Root UI;
+                                    font-size: 12px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 16px; /* 133.333% */
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        .laykParent{
+            width: 100%;
+            height: 80px;
+            background: var(--535-e-69, #535E69);
+            @include center();
+            .laykMain{
+                width: 1175px;
+                height: 32px;
+                display: flex;
+                gap: 44px;
+                .ciziq{
+                    width: 1px;
+                    height: 100%;
+                    border: 1px dashed #D7D9DC;
+                }
+                .kozPar{
+                    width: 241px;
+                    height: 100%;
+                    @include center();
+                    justify-content: space-between;
+                    .koz{
+                        @include center();
+                        gap: 15px;
+                        color: var(--ffffff, #FFF);
+                        font-family: PT Root UI;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 28px; /* 140% */
+                    }
+                    .dum{
+                        width: 24px;
+                        height: 24px;
+                        background-color: #9A9C9E;
+                        border: 1px solid white;
+                        border-radius: 50%;
+                        color: white;
+                        @include center();
+                    }
+                }
+                .ikkk{
+                    width: 281px;
+                }
+                .uchhh{
+                    width: 203px;
+                }
+                .tut{
+                    width: 179px;
+                }
+            }
+        }
+        .footMain{
+            width: 1175px;
+            height: 350px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 40px 0px;
+            .market{
+                max-width: 190px;
+                @include center();
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 20px;
+                .fotgap{
+                    width: 95%;
+                    display: flex;
+                    flex-direction: column; 
+                    justify-content: center;
+                    span{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        svg{
+                            height: 44px;
+                        }
+                    }
+                }
+            }
+            .fotKatalog{
+                max-width: 138px;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                h1{
+                    color: var(--15191-c, #15191C);
+                    font-family: PT Root UI;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 28px; /* 140% */
+                }
+                article{
+                    display: flex;
+                    flex-direction: column;
+                    span{
+                        color: var(--3-a-3-f-43, #3a3f43);
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 22px; /* 137.5% */
+                        cursor: pointer;
+                        &:hover{
+                            color: #3697E2;
+                        }
+                    }
+                }
+            }
+            .info{
+                max-width: 210px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+                h1{
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 28px; /* 140% */
+                }
+                article{
+                    display: flex;
+                    flex-direction: column;
+                    span{
+                        color: var(--3-a-3-f-43, #3A3F43);
+                        font-size: 16px;
+                        line-height: 22px; /* 137.5% */
+                        cursor: pointer;
+                        &:hover{
+                            color: #3697E2;
+                        }
+                    }
+                }
+                img{
+                    cursor: pointer;
+                }
+            }
+            .kontak{
+                max-width: 200px;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                h1{
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 28px; /* 140% */
+                }
+                .fotmessg{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    span{
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 28px; /* 116.667% */
+                    }
+                    .fmessah{
+                        display: flex;
+                        img{
+                            height: 50px;
+                            width: 56px;
+                            transition-duration: 1.5s;
+                            cursor: pointer;
+                            &:hover{
+                                transform: scale(1.2);
+                                transition: 1.5s;
+    }
+                        }
+                    }
+                }
+                .kgap{
+                    display: flex;
+                    flex-direction: column;
+                    span{
+                        color: var(--3-a-3-f-43, #3A3F43);
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 22px; /* 137.5% */
+                        cursor: pointer;
+                        &:hover{
+                            color: #3697E2;
+                        }
+                    }
+                }
+                .fbtn{
+                    width: 100%;
+                    @include center();
+                    flex-direction: column;
+                    gap: 10px;
+                    button{
+                        width: 100%;
+                        height: 40px;
+                        border: 0;
+                        cursor: pointer;
+                    }
+                    .podpis{
+                        border-radius: 5px;
+                        background: var(--ffffff, #FFF);
+                        box-shadow: 0px 5px 20px 0px rgba(63, 66, 69, 0.05);
+                        span{
+                            color: #3697E2;
+                        }
+                    }
+                    .skachat{
+                        border-radius: 5px;
+                        background: var(--eeee-36, linear-gradient(0deg, #F1DA09 0%, #F1DA09 100%), linear-gradient(0deg, #EEEE36 0%, #EEEE36 100%), #0867D6);
+                        color: #3A3F43;
+                    }
+                }
+            }
+        }
+        .foroxiri{
+            margin-top: 20px;
+            width: 100%;
+            height: 60px;
+            background: var(--f-2-f-5-f-9, #F2F5F9);
+            @include center();
+            .foxitMain{
+                width: 1175px;
+                height: 19px;
+                @include center();
+                justify-content: space-between;
+                p{
+                    @include center();
+                    gap: 50px;
+                }
+                span{
+                    color: var(--3-a-3-f-43, #3A3F43);
+                    font-family: PT Root UI;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 18px; /* 128.571% */
+                }
+            }
+        }
+    }
+}
+#scroll-container {
+    overflow-y: scroll;
+    height: 100vh; /* Задает высоту контейнера прокрутки, чтобы создать вертикальную прокрутку */
+    scroll-behavior: smooth; /* Добавляет плавность к прокрутке */
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: rgb(229,229,229);
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #3697E2 0%, #00C9C9 100%);
+    border-radius: 6px;
+    &:hover{
+        background: linear-gradient(90deg, #00C9C9 0%,  #3697E2 100%);
+    }
+}
+
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-180px * 6)); -webkit-transform: translateX(calc(-180px * 6)); -moz-transform: translateX(calc(-180px * 6)); -ms-transform: translateX(calc(-180px * 6)); -o-transform: translateX(calc(-180px * 6)); }
+}
+@keyframes strelka {
+    0%{ transform:translateY(0); -webkit-transform:translateY(0); -moz-transform:translateY(0); -ms-transform:translateY(0); -o-transform:translateY(0); }
+    40%{ transform:translateY(-4px) ; -webkit-transform:translateY(-4px) ; -moz-transform:translateY(-4px) ; -ms-transform:translateY(-4px) ; -o-transform:translateY(-4px) ; }
+    60%{ transform:translateY(-2px) ; -webkit-transform:translateY(-2px) ; -moz-transform:translateY(-2px) ; -ms-transform:translateY(-2px) ; -o-transform:translateY(-2px) ; }
+}
+@keyframes srtelka{
+    0%{ transform:scale(1) ; -webkit-transform:scale(1) ; -moz-transform:scale(1) ; -ms-transform:scale(1) ; -o-transform:scale(1) ; }
+    50%{ transform:scale(1.2) ; -webkit-transform:scale(1.2) ; -moz-transform:scale(1.2) ; -ms-transform:scale(1.2) ; -o-transform:scale(1.2) ; }
+    100%{ transform:scale(1) ; -webkit-transform:scale(1) ; -moz-transform:scale(1) ; -ms-transform:scale(1) ; -o-transform:scale(1) ; }
+}
+
+
+
+@media (max-width: 1175px){
+    .main .container {
+        .Parent{
+            .Navbar{
+                .navCChild{
+                    .navOne{
+                        width: 100%;
+                        #addd{
+                            display: none;
+                        }
+                    }
+                }
+                .navChild{
+                    .navTwo{
+                        width: 100%;
+                    }
+                }
+                .navCHTwo{
+                    .navTree{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .none{
+            .Parent{
+                .Child{
+                    width: 100%;
+                    .brinciSlide{
+                        width: 65%;
+                    }
+                    .ikinciSlide{
+                        width: 30%;
+                    }
+                }
+                .PopularKat{
+                    width: 100%;
+                }
+            }
+            .ParentWo{
+                .xitProdaj{
+                    width: 100%;
+                }
+            }
+            .BrendParent{
+                .brMain{
+                    width: 100%;
+                }
+            }
+            .RecProd{
+                .RecMain{
+                    width: 100%;
+                }
+            }
+            .TovarParent{
+                .dostavka{
+                    .dosMain{
+                        width: 100%;
+                    }
+                }
+                .nawTovari{
+                    .tovarMain{
+                        width: 100%;
+                    }
+                }
+                .gapPar{
+                    .gapMain{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .footer{
+            .laykParent{
+                .laykMain{
+                    width: 100%;
+                }
+            }
+            .footMain{
+                width: 100%;
+            }
+            .foroxiri{
+                .foxitMain{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1075px){
+    .main .container{
+        .Parent{
+            .cazuy{
+                .navTree{
+                    li{
+                        font-size: 17px;
+                    }
+                    span{
+                        display: none;
+                    }
+                }
+            }
+            .Navbar{
+                .navCChild{
+                    .navOne{
+                        .location{
+                            width: 65px;
+                            gap: 4px;
+                            span{
+                                font-size: 13px;
+                            }
+                            img{
+                                height: 18px;
+                            }
+                        }
+                        ul{
+                            width: 330px;
+                        }
+                        .messenjers{
+                            width: 160px;
+                            svg{
+                                height: 25px;
+                                width: 20px;
+                            }
+                            span{
+                                font-size: 14px;
+                            }
+                        }
+                        .gmail{
+                            width: 135px;
+                            span{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+                .navChild{
+                    height: 80px;
+                    .navTwo{
+                        .search{
+                            width: 580px;
+                            label{
+                                font-size: 14px;
+                                gap: 10px;
+                            }
+                        }
+                        .ikons{
+                            width: 140px;
+                            span{
+                                svg{
+                                    width: 25px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .navCHTwo{
+                    .navTree{
+                        li{
+                            font-size: 17px;
+                        }
+                        span{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .none{
+            .ParentWo{
+                .xitProdaj{
+                    .xpProduct{
+                        .prMain{
+                            .producyt{
+                                height: 350px;
+                                padding: 5px 0px;
+                                .first{
+                                    .imgSlide{
+                                        .slideImg{
+                                            width: 170px;
+                                            .dspan{
+                                                img{
+                                                    width: 150px;
+                                                    max-height: 130px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .secovfd{
+                                    .vc{
+                                        font-size: 15px;
+                                    }
+                                    .starsss{
+                                        .star{
+                                            font-size: 22px;
+                                        }
+                                        .spaxn{
+                                            font-size: 13px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .RecProd{
+                .RecMain{
+                    .RecNav{
+                        .katol{
+                            gap: 20px;
+                            button{
+                                span{
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                        .vse{
+                            font-size: 14px;
+                            gap: 8px;
+                            svg{
+                                width: 15px;
+                                height: 15px;
+                            }
+                        }
+                    }
+                    .RecPRMain{
+                        .RecPRParent{
+                            .Recprods{
+                                width: 250px;
+                                .Recporud{
+                                    width: 100%;
+                                    height: 350px;
+                                    padding-bottom: 5px;
+                                    .first{
+                                        gap: 20px;
+                                        .imgSlide{
+                                            .slideImg{
+                                                width: 170px;
+                                                height: 135px;
+                                                .dspan{
+                                                    img{
+                                                        width: 100%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .secovfd{
+                                        .vc{
+                                            font-size: 15px;
+                                        }
+                                        .starsss{
+                                            .star{
+                                                font-size: 22px;
+                                            }
+                                            .spaxn{
+                                                font-size: 14px;
+                                                span{
+                                                    font-size: 12px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer{
+            .laykParent{
+                .laykMain{
+                    gap: 25px;
+                    .kozPar{
+                        width: 220px;
+                        .koz{
+                            font-size: 19px;
+                            gap: 10px;
+                        }
+                    }
+                    .ikkk{
+                        width: 260px;
+
+                    }
+                    .uchhh{
+                        width: 170px;
+                    }
+                    .tut{
+                        width: 150px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 975px){
+    .main .container{
+        .none{
+            .ParentWo{
+                height: 580px;
+                .xitProdaj{
+                    .xpProduct{
+                        .prMain{
+                            width: 240px;
+                            .producyt{
+                                width: 100%;
+                                height: 320px;
+                                padding-bottom: 0px;
+                                .first{
+                                    .imgSlide{
+                                        height: 130px;
+                                        .slideImg{
+                                            width: 160px;   
+                                            .dspan{
+                                                img{
+                                                    width: 100%;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .secovfd{
+                                    height: 38%;
+                                    gap: 7px;
+                                    justify-content: center;
+                                    .vc{
+                                        font-size: 14px;
+                                        line-height: 15px;
+                                    }
+                                    .starsss{
+                                        .star{
+                                            font-size: 20px;
+                                        }
+                                        .spaxn{
+                                            font-size: 12px;
+                                            span{
+                                                font-size: 10px;
+                                            }
+                                        }
+                                    }
+                                    .korzina{
+                                        p{
+                                            span{
+                                                font-size: 20px;
+                                            }
+                                            del{
+                                                font-size: 14px;
+                                            }
+                                        }
+                                        button{
+                                            width: 30px;
+                                            height: 30px;
+                                            img{
+                                                width: 20px;
+                                                height: 20px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .RecProd{
+                height: 550px;
+                .RecMain{
+                    .RecPRMain{
+                        .RecPRParent{
+                            .Recprods{
+                                width: 250px;
+                                .Recporud{
+                                    width: 100%;
+                                    height: 320px;
+                                    padding-bottom: 3px;
+                                    .first{
+                                        .imgSlide{
+                                            height: 130px;
+                                            .slideImg{
+                                                width: 160px;   
+                                                .dspan{
+                                                    img{
+                                                        width: 100%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .secovfd{
+                                        height: 38%;
+                                        gap: 7px;
+                                        justify-content: center;
+                                        .vc{
+                                            font-size: 14px;
+                                            line-height: 15px;
+                                        }
+                                        .starsss{
+                                            .star{
+                                                font-size: 20px;
+                                            }
+                                            .spaxn{
+                                                font-size: 12px;
+                                                span{
+                                                    font-size: 10px;
+                                                }
+                                            }
+                                        }
+                                        .korzina{
+                                            p{
+                                                span{
+                                                    font-size: 20px;
+                                                }
+                                                del{
+                                                    font-size: 14px;
+                                                }
+                                            }
+                                            button{
+                                                width: 30px;
+                                                height: 30px;
+                                                img{
+                                                    width: 20px;
+                                                    height: 20px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .TovarParent{
+                .nawTovari{
+                    .tovarMain{
+                        .tovProd{
+                            gap: 10px;
+                            .tprod{
+                                gap: 10px;
+                                .tgap{
+                                    h1{
+                                        font-size: 16px;
+                                    }
+                                    .otaa{
+                                        .kopgap{
+                                            span{
+                                                font-size: 15px;
+                                            }
+                                        }
+                                    }
+                                    button{
+                                        width: 110px;
+                                        span{
+                                            font-size: 12px;
+                                        }
+                                        img{
+                                            height: 14px;
+                                        }
+                                    }
+                                }  
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 875px){
+    .main .container {
+        .Parent{
+            .cazuy{
+                .navTree{
+                    li{
+                        font-size: 16px;
+                    }
+                    .zsdvsdvzxdv{
+                        display: none;
+                    }
+                }
+            }
+            .Navbar{
+                height: 150px;
+                .navCChild{
+                    .navOne{
+                        ul{
+                            width: 280px;
+                            .akkk{
+                                display: none;
+                            }
+                        }
+                        .messenjers{
+                            width: 100px;
+                            svg{
+                                width: 25px;
+                            }
+                            span{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .navChild{
+                    height: 65%;
+                    .navTwo{
+                        .search{
+                            width: 500px;
+                            height: 40px;
+                            label{
+                                font-size: 12px;
+                                gap: 5px;
+                                input{
+                                    &::placeholder{
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                            img{
+                                width: 15px;
+                                height: 15px;
+                            }
+                        }
+                        .ikons{
+                            width: 130px;
+                            height: 26px;
+                            span{
+                                svg{
+                                    width: 22px;
+                                    height: 22px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .navCHTwo{
+                    .navTree{
+                        .zsdvsdvzxdv{
+                            display: none;
+                        }
+                        li{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        .none{
+            .ParentWo{
+                height: 550px;
+                .xitProdaj{
+                    .xpProduct{
+                        .prMain{
+                            width: 220px;
+                            .producyt{
+                                height: 310px;
+                                .first{
+                                    .imgSlide{
+                                        height: 125px;
+                                        .slideImg{
+                                            width: 140px;
+                                        }
+                                    }
+                                }
+                                .secovfd{
+                                    height: 37%;
+                                    gap: 6px;
+                                    .vc{
+                                        font-size: 13px;
+                                    }
+                                    .starsss{
+                                        .star{
+                                            font-size: 19px;
+                                        }
+                                        .spaxn{
+                                            margin-top: 8px;
+                                            font-size: 11px;
+                                            span{
+                                                font-size: 8px;
+                                            }
+                                        }
+                                    }
+                                    .korzina{
+                                        p{
+                                            span{
+                                                font-size: 19px;
+                                            }
+                                            del{
+                                                font-size: 13px;
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .BrendParent{
+                height: 250px;
+            }
+            .RecProd{
+                height: 530px;
+                .RecMain{
+                    .RecPRMain{
+                        .RecPRParent{
+                            .Recprods{
+                                width: 220px;
+                                .Recporud{
+                                    height: 310px;
+                                    .first{
+                                        .imgSlide{
+                                            height: 125px;
+                                            .slideImg{
+                                                width: 140px;
+                                            }
+                                        }
+                                    }
+                                    .secovfd{
+                                        height: 37%;
+                                        gap: 6px;
+                                        .vc{
+                                            font-size: 13px;
+                                        }
+                                        .starsss{
+                                            .star{
+                                                font-size: 19px;
+                                            }
+                                            .spaxn{
+                                                margin-top: 8px;
+                                                font-size: 11px;
+                                                span{
+                                                    font-size: 8px;
+                                                }
+                                            }
+                                        }
+                                        .korzina{
+                                            p{
+                                                span{
+                                                    font-size: 19px;
+                                                }
+                                                del{
+                                                    font-size: 13px;
+                                                }
+                                            }
+    
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 775px){
+    .main .container{
+        .none{
+            .Parent{
+                .PopularKat{
+                    gap: 10px;
+                    .popNav{
+                        h1{
+                            font-size: 22px;
+                        }
+                        span{
+                            width: 110px;
+                            font-size: 12px;
+                            gap: 2px;
+                            font-weight: 400;
+                            svg{
+                                width: 4;
+                                height: 7px;    
+                            }
+                        }
+                    }
+                    .kat{
+                        grid-template-columns: repeat(3, minmax(120px, 1fr));
+                        .bolim{
+                            height: 180px;
+                            gap: 10px;
+                            .imgg{
+                                width: min-content;
+                            }
+                            .gap{
+                                p{
+                                    font-size: 16px;
+                                }
+                                span{
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .ParentWo{
+                height: 450px;
+                .xitProdaj{
+                    height: 360px;
+                    .xpNav{
+                        height: 40px;
+                        h1{
+                            font-size: 25px;
+                        }
+                        article{
+                            width: 150px;
+                            gap: 8px;
+                            span{font-size: 12px;}
+                            span{svg{height: 7px;}}
+                        }
+                    }
+                    .xpProduct{
+                        height: 80%;
+                        display: flex;
+                        align-items: center;
+                        .prMain{
+                            width: 180px;
+                            .producyt{
+                                height: 270px;
+                                .first{
+                                    .ckeck{
+                                        .checj{
+                                            width: 13px;
+                                            height: 13px;
+                                            font-size: 8px;
+                                        }
+                                        span{
+                                            font-size: 11px
+                                        };
+                                    }
+                                    .imgSlide{
+                                        .slideImg{
+                                            width: 100px;
+                                            height: 100px;
+                                        }
+                                        .slideIkon{
+                                            p{
+                                                svg{
+                                                    width: 16px;
+                                                    height: 16px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .secovfd{
+                                    .vc{
+                                        font-size: 11px;
+                                    }
+                                    .starsss{
+                                        gap: 2px;
+                                        .star{
+                                            font-size: 18px;
+                                        }
+                                        .spaxn{
+                                            font-size: 9px;
+                                        }
+                                    }
+                                    .korzina{
+                                        p{
+                                            width: max-content;
+                                            span{
+                                                font-size: 17px;
+                                            }
+                                            del{font-size: 11px;}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .BrendParent{
+                height: 200px;
+                .brMain{
+                    height: 180px;
+                    .brNav{
+                        height: 30px;
+                        h1{
+                            font-size: 22px;
+                        }
+                        span{
+                            display: none;
+                        }
+                    }
+                    .brProd{
+                        .beSlide{
+                            .slide{
+                                width: 150px;
+                                height: 80px;
+                                overflow: hidden;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            .RecProd{
+                height: max-content;
+                padding: 30px 0px;
+                .RecMain{
+                    height: max-content;
+                    .RecNav{
+                        .katol{
+                            gap: 10px;
+                            button{
+                                span{
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                        .vse{
+                            font-size: 10px;
+                            gap: 5px;
+                            svg{
+                                width: 8px;
+                                height: 8px;
+                            }
+                        }
+                    }
+                    .RecPRMain{
+                        height: max-content;
+                        padding: 10px 0px;
+                        .RecPRParent{
+                            height: max-content;
+                            display: flex;
+                            align-items: center;
+                            .Recprods{
+                                width: 180px;
+                                .Recporud{
+                                    height: 270px;
+                                    .first{
+                                        .ckeck{
+                                            .checj{
+                                                width: 13px;
+                                                height: 13px;
+                                                font-size: 8px;
+                                            }
+                                            span{
+                                                font-size: 11px
+                                            };
+                                        }
+                                        .imgSlide{
+                                            .slideImg{
+                                                width: 100px;
+                                                height: 100px;
+                                            }
+                                            .slideIkon{
+                                                p{
+                                                    svg{
+                                                        width: 16px;
+                                                        height: 16px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .secovfd{
+                                        .vc{
+                                            font-size: 11px;
+                                        }
+                                        .starsss{
+                                            gap: 2px;
+                                            .star{
+                                                font-size: 18px;
+                                            }
+                                            .spaxn{
+                                                font-size: 9px;
+                                            }
+                                        }
+                                        .korzina{
+                                            p{
+                                                width: max-content;
+                                                span{
+                                                    font-size: 17px;
+                                                }
+                                                del{font-size: 11px;}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .TovarParent{
+                .dostavka{
+                    height: max-content;
+                    padding: 25px;
+                    .dosMain{
+                        height: max-content;
+                        .dosPr{
+                            width: 150px;
+                            height: 60px;
+                            span{
+                                font-size: 14px;
+                                line-height: 20px;
+                            }
+                            img{
+                                width: 30px;
+                                height: 30px;
+                            }
+                        }
+                    }
+                }
+                .nawTovari{
+                    .tovarMain{
+                        .tovProd{
+                            gap: 10px;
+                            grid-template-columns: repeat(2, minmax(150px, 1fr));
+                        }
+                    }
+                }
+            }
+        }
+        .footer{
+            .laykParent{
+                display: none;
+            }
+            .footMain{
+                .fotKatalog{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 675px){
+    .marCh{
+        margin-top: 140px;
+    }
+    .main .container{
+        .Parent{
+            padding-bottom: 30px;
+            .Navbar{
+                .navCChild{
+                    .navOne{
+                        .location{
+                            width: 50px;
+                            gap: 3px;
+                            img{
+                                width: 13px;
+                                height: 13px;
+                            }
+                            span{font-size: 11px;}
+                        }
+                        .messenjers{
+                            width: 60px;
+                            svg{
+                                width: 18px;
+                                height: 18px;
+                            }
+                        }
+                        .gmail{
+                            display: none;
+                        }
+                        .register{
+                            width: 95px;
+                            svg{
+                                width: 15px;
+                                height: 15px;
+                                display: none;
+                            }
+                            span{font-size: 11px;}
+                        }
+                    }
+                }
+                .navChild{
+                    height: 50%;
+                    .navTwo{
+                        .logo{
+                            img{
+                                width: 120px;
+                            }
+                        }
+                        .search{
+                            width: 330px;
+                            height: 30px;
+                            label{
+                                span{
+                                    display: none;
+                                }
+                                input{
+                                    width: 90%;
+                                    font-size: 10px;
+                                    &::placeholder{
+                                        font-size: 10px;
+                                        letter-spacing: 2px;
+                                    }
+                                }
+                            }
+                            img{
+                                width: 10px;
+                                height: 10px;
+                                margin-right: 10px;
+                            }
+                        }
+                        .ikons{
+                            width: 90px;
+                            margin-right: 10px;
+                            span{
+                                svg{
+                                    width: 15px;
+                                    height: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .navCHTwo{
+                    .navTree{
+                        li{
+                            font-size: 14px;
+                        }
+                        .dalnomer{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .cazuy{
+                .navTree{
+                    li{
+                        font-size: 14px;
+                    }
+                    .dalnomer{
+                        display: none;
+                    }
+                }
+                .screll{
+                    width: 40px;
+                    height: 20px;
+                    bottom: -18px;
+                    img{width: 14px; height: 14px;}
+                }
+            }
+        }
+        .none{
+            .Parent{
+                .Child{
+                    height: 300px;
+                    .brinciSlide{
+                        .swiper-pagination{
+                            display: none;
+                        }
+                    }
+                    .ikinciSlide{
+                        .swiper-pagination{
+                            display: none;
+                        }
+                    }
+                }
+                .PopularKat{
+                        .kat{
+                            .bolim{
+                                height: 150px;
+                                .imgg{
+                                    img{
+                                        width: 70px;
+                                        height: 70px;
+                                    }
+                                }
+                                .gap{
+                                    p{font-size: 13px;}
+                                    span{display: none;}
+                                }
+                            }
+                        }
+                }
+            }
+            .ParentWo{
+                height: max-content;
+                padding: 25px 0px;
+                .xitProdaj{
+                    height: max-content;
+                    .xpNav{
+                        h1{
+                            font-size: 20px;
+                        }
+                        article{
+                            justify-content: flex-end;  
+                            span{
+                                font-size: 10px;
+                                svg{
+                                    height: 6px;
+                                }
+                            }
+                        }
+                    }
+                    .xpProduct{
+                        height: max-content;
+                        padding: 10px 0px;
+                        .prMain{
+                            width: 160px;
+                            height: max-content;
+                            .producyt{
+                                height: 230px;
+                                .first{
+                                    height: 130px;
+                                    gap: 10px;
+                                    .ckeck{
+                                        .checj{
+                                            width: 10px;
+                                            height: 10px;
+                                            font-size: 6px;
+                                        }
+                                        span{
+                                            font-size: 9px;
+                                        }
+                                    }
+                                    .imgSlide{
+                                        height: 100px;
+                                        .slideImg{
+                                            height: 90px;
+                                            width: 80%;
+                                        }
+                                        .slideIkon{display: none;}
+                                    }
+                                }
+                                .secovfd{
+                                    .vc{
+                                        font-size: 10px;
+                                    }
+                                    .starsss{
+                                        .star{
+                                            font-size: 17px;
+                                        }
+                                        .spaxn{margin-left: 0px;span{display: none;}}
+                                    }
+                                    .korzina{
+                                        p{
+                                            span{
+                                                font-size: 16px;
+                                            }
+                                            del{
+                                                font-size: 10px;
+                                            }
+                                        }
+                                        button{
+                                            width: 23px;
+                                            height: 23px;
+                                            img{
+                                                width: 14px;
+                                                height: 14px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .RecProd{
+                .RecMain{
+                    .RecNav{
+                        .katol{
+                            .skidki{
+                                display: none;
+                            }
+                        }
+                    }
+                    .RecPRMain{
+                        .RecPRParent{
+                            .Recprods{
+                                width: 160px;
+                                .Recporud{
+                                    height: 230px;
+                                    .first{
+                                        height: 130px;
+                                        gap: 10px;
+                                        .ckeck{
+                                            .checj{
+                                                width: 10px;
+                                                height: 10px;
+                                                font-size: 6px;
+                                            }
+                                            span{
+                                                font-size: 9px;
+                                            }
+                                        }
+                                        .imgSlide{
+                                            height: 100px;
+                                            .slideImg{
+                                                height: 90px;
+                                                width: 80%;
+                                            }
+                                            .slideIkon{display: none;}
+                                        }
+                                    }
+                                    .secovfd{
+                                        .vc{
+                                            font-size: 10px;
+                                        }
+                                        .starsss{
+                                            .star{
+                                                font-size: 17px;
+                                            }
+                                            .spaxn{margin-left: 0px;span{display: none;}}
+                                        }
+                                        .korzina{
+                                            p{
+                                                span{
+                                                    font-size: 16px;
+                                                }
+                                                del{
+                                                    font-size: 10px;
+                                                }
+                                            }
+                                            button{
+                                                width: 23px;
+                                                height: 23px;
+                                                img{
+                                                    width: 14px;
+                                                    height: 14px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .TovarParent{
+                .dostavka{
+                    .dosMain{
+                        display: grid;
+                        grid-template-columns: repeat(2, minmax(100px, 1fr));
+                        gap: 10px;
+                        justify-items: center;
+                    }
+                }
+                .gapPar{
+                    height: max-content;
+                    padding: 10px 0px;
+                    .gapMain{
+                        gap: 8px;
+                        height: max-content;
+                        h1{font-size: 20px;}
+                        span{font-size: 12px;}
+                        h2{font-size: 14px;}
+                        ul{li{font-size: 12px;}}
+                    }
+                }
+            }
+        }
+        .footer{
+            box-shadow: 0px -25px 59px 1px rgba(0, 0, 0, 0.2);
+            .footMain{
+                height: max-content;
+                justify-content: space-around;
+                padding: 10px 0;
+                .market{
+                    .fotgap{
+                        gap: 8px;
+                        span{
+                            svg{width: 14px; height: 14px;}
+                            font-size: 12px;
+                        }
+                    }
+                    .aswqa{
+                        width: 100px;
+                        height: 60px;
+                    }
+                }
+                .info{
+                    h1{font-size: 15px;}
+                    article{span{font-size: 12px; line-height: normal;}}
+                    img{width: 120px; height: 50px;}
+                }
+                .kontak{display: none;} 
+
+            }
+            .foroxiri{
+                height: max-content;
+                margin-top: 0;
+                .foxitMain{
+                    span{font-size: 9px;}
+                    p{gap: 10px;}
+                    .katras{display: none;}
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 425px){
+    .main .container{
+        .Parent{
+            .Navbar{
+                justify-content: space-between;
+                height: 130px;
+                .navCChild{
+                    .navOne{
+                        .location{display: none;}
+                        ul{
+                            li{font-size: 13px;}
+                        }
+                        .messenjers{width: 70px;}
+                        .register{
+                            width: 25px;
+                            height: 25px;
+                            @include center();
+                            border: 1px solid rgb(133, 133, 133);
+                            border-radius: 50%;
+                            svg{display: block; }
+                            span{display: none;}
+                        }
+                    }
+                }
+                .navChild{
+                    height: 60px;
+                    .navTwo{
+                        .search{
+                            width: 50%;
+                        }
+                        .ikons{
+                            display: none;
+                        }
+                    }
+                }
+                .navCHTwo{
+                    height: 30px;
+                    .navTree{
+                        .zirit{display: none;}
+                        li{font-size: 13px;}
+                    }
+                }
+            }
+            .cazuy{
+                height: 30px;
+                .navTree{
+                    .zirit{display: none;}
+                    li{font-size: 13px;}
+                }
+                .screll{
+                    width: 30px;
+                    height: 15px;
+                    bottom: -15px;
+                }
+            }
+        }
+        .none{
+            .Parent{
+                .Child{
+                    height: 200px;
+                    .brinciSlide{
+                        .swiper-pagination{
+                            display: flex;
+                            left: 35%;
+                            span{
+                                width: 3px;
+                                height: 3px;
+                                background-color: white;
+                            }
+                        }
+                    }
+                    .ikinciSlide{
+                        .swiper-pagination{
+                            display: flex;
+                            left: 25%;
+                            span{
+                                width: 3px;
+                                height: 3px;
+                                background-color: white;
+                            }
+                        }
+                    }
+                }
+                .PopularKat{
+                    margin: 0;
+                    .kat{
+                        .bolim{
+                            height: 120px;
+                            .imgg{
+                                img{
+                                    width: 50px;
+                                    height: 50px;
+                                }
+                            }
+                            .gap{p{line-height: normal;}}
+                        }
+                        .zirit{display: none;}
+                    }
+                }
+            }
+            .ParentWo{
+                .xitProdaj{
+                    .xpProduct{
+                        .prMain{
+                            .producyt{
+                                padding-top: 12px;
+                                gap: 8px;
+                                .first{
+                                    height: 120px;
+                                    gap: 5px;
+                                    .ckeck{
+                                        .checj{
+                                            width: 15px;
+                                            height: 15px;
+                                            font-size: 10px;
+                                        }
+                                        span{font-size: 13px;}
+                                    }
+                                    .imgSlide{
+                                        .slideImg{
+                                            width: 70%;
+                                            height: 80px;
+                                        }
+                                    }
+                                }
+                                .secovfd{
+                                    gap: 0px;
+                                    .vc{
+                                        font-size: 13px;
+                                    }
+                                    .starsss{
+                                        .star{font-size: 18px;}
+                                        .spaxn{font-size: 10px;span{display: inline;}}
+                                    }
+                                    .korzina{
+                                        p{span{font-size: 18px;}del{font-size: 13px;}}
+                                        button{
+                                            width: 27px;
+                                            height: 27px;
+                                            img{
+                                                width: 16px;
+                                                height: 16px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .RecProd{
+                .RecMain{
+                    .RecNav{
+                        .katol{
+                            button{
+                                span{
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                        .vse{
+                            span{display: none;}
+                            svg{
+                                width: 11px;
+                                height: 11px;
+                            }
+                        }
+                    }
+                    .RecPRMain{
+                        .RecPRParent{
+                            .Recprods{
+                                .Recporud{
+                                    padding-top: 12px;
+                                    gap: 8px;
+                                    .first{
+                                        height: 120px;
+                                        gap: 5px;
+                                        .ckeck{
+                                            .checj{
+                                                width: 15px;
+                                                height: 15px;
+                                                font-size: 10px;
+                                            }
+                                            span{font-size: 13px;}
+                                        }
+                                        .imgSlide{
+                                            .slideImg{
+                                                width: 70%;
+                                                height: 80px;
+                                            }
+                                        }
+                                    }
+                                    .secovfd{
+                                        gap: 0px;
+                                        .vc{
+                                            font-size: 13px;
+                                        }
+                                        .starsss{
+                                            .star{font-size: 18px;}
+                                            .spaxn{font-size: 10px;span{display: inline;}}
+                                        }
+                                        .korzina{
+                                            p{span{font-size: 18px;}del{font-size: 13px;}}
+                                            button{
+                                                width: 27px;
+                                                height: 27px;
+                                                img{
+                                                    width: 16px;
+                                                    height: 16px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
